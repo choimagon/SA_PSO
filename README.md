@@ -4,7 +4,7 @@
 # 파이프라인
 <p align="center"> <img src="pipeline.png" alt="pipeline" width="85%"> </p>
 
-#결과
+# 결과
 
 ### 신뢰도 75%
 | Run #1 (2025-11-03 03:57:26) | Run #2 (2025-11-03 05:55:27) |
