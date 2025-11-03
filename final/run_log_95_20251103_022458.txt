@@ -1,0 +1,1413 @@
+=== Hybrid HParam Search Run Log (SIH version) ===
+start_time: 2025-11-03T02:24:58.197370
+
+[info] device = cuda
+[info] downloading CIFAR-10 ...
+[TIMING] data_load=0.96s
+[SIH] use_random_act/opt=True, repeats=1
+[train] start: L=6 U=544 D=0.250 act=relu/he opt=AdamW lr=1.00e-03 wd=1.00e-04 | overfit_conf=95%
+  [epoch 01/10] train_loss=2.0232 val_loss=1.6847 train_acc=0.281 val_acc=0.391 (best=0.391)
+  [epoch 02/10] train_loss=1.7084 val_loss=1.5700 train_acc=0.386 val_acc=0.436 (best=0.436)
+  [epoch 03/10] train_loss=1.5892 val_loss=1.5046 train_acc=0.430 val_acc=0.456 (best=0.456)
+  [epoch 04/10] train_loss=1.5019 val_loss=1.4486 train_acc=0.461 val_acc=0.489 (best=0.489)
+  [epoch 05/10] train_loss=1.4350 val_loss=1.4003 train_acc=0.489 val_acc=0.500 (best=0.500)
+  [epoch 06/10] train_loss=1.3785 val_loss=1.3794 train_acc=0.506 val_acc=0.510 (best=0.510)
+  [epoch 07/10] train_loss=1.3261 val_loss=1.3439 train_acc=0.528 val_acc=0.527 (best=0.527)
+  [epoch 08/10] train_loss=1.2776 val_loss=1.3311 train_acc=0.543 val_acc=0.532 (best=0.532)
+  [early] overfit_checking=True → stop (and EXCLUDE this candidate)
+[train] done: best_val_acc=0.5319 (epoch=8) | was_overfit=True
+  [proxy_eval/RAND] try=1/1 | act=relu/he, opt=AdamW → val=-inf
+  [proxy_eval/RAND] all tries overfit → score = -inf
+[train] start: L=4 U=544 D=0.250 act=relu/he opt=AdamW lr=1.00e-03 wd=1.00e-04 | overfit_conf=95%
+  [epoch 01/10] train_loss=1.9288 val_loss=1.6318 train_acc=0.321 val_acc=0.413 (best=0.413)
+  [epoch 02/10] train_loss=1.6408 val_loss=1.5151 train_acc=0.414 val_acc=0.460 (best=0.460)
+  [epoch 03/10] train_loss=1.5215 val_loss=1.4347 train_acc=0.453 val_acc=0.487 (best=0.487)
+  [epoch 04/10] train_loss=1.4384 val_loss=1.4067 train_acc=0.487 val_acc=0.499 (best=0.499)
+  [epoch 05/10] train_loss=1.3756 val_loss=1.3683 train_acc=0.508 val_acc=0.513 (best=0.513)
+  [early] overfit_checking=True → stop (and EXCLUDE this candidate)
+[train] done: best_val_acc=0.5132 (epoch=5) | was_overfit=True
+  [proxy_eval/RAND] try=1/1 | act=relu/he, opt=AdamW → val=-inf
+  [proxy_eval/RAND] all tries overfit → score = -inf
+[train] start: L=8 U=544 D=0.250 act=sigmoid/xavier opt=Adam lr=1.00e-03 wd=1.00e-04 | overfit_conf=95%
+  [epoch 01/10] train_loss=2.1013 val_loss=1.9102 train_acc=0.224 val_acc=0.307 (best=0.307)
+  [epoch 02/10] train_loss=1.9820 val_loss=1.8621 train_acc=0.271 val_acc=0.319 (best=0.319)
+  [epoch 03/10] train_loss=1.9501 val_loss=1.8556 train_acc=0.283 val_acc=0.317 (best=0.319)
+  [epoch 04/10] train_loss=1.9283 val_loss=1.8484 train_acc=0.291 val_acc=0.324 (best=0.324)
+  [epoch 05/10] train_loss=1.9187 val_loss=1.8342 train_acc=0.294 val_acc=0.326 (best=0.326)
+  [epoch 06/10] train_loss=1.9091 val_loss=1.8368 train_acc=0.296 val_acc=0.330 (best=0.330)
+  [epoch 07/10] train_loss=1.8969 val_loss=1.8285 train_acc=0.300 val_acc=0.332 (best=0.332)
+  [epoch 08/10] train_loss=1.8866 val_loss=1.8174 train_acc=0.304 val_acc=0.330 (best=0.332)
+  [epoch 09/10] train_loss=1.8752 val_loss=1.8117 train_acc=0.309 val_acc=0.337 (best=0.337)
+  [epoch 10/10] train_loss=1.8719 val_loss=1.8115 train_acc=0.311 val_acc=0.334 (best=0.337)
+[train] done: best_val_acc=0.3374 (epoch=9) | was_overfit=False
+  [proxy_eval/RAND] try=1/1 | act=sigmoid/xavier, opt=Adam → val=0.3374
+[train] start: L=6 U=304 D=0.250 act=relu/he opt=AdamW lr=1.00e-03 wd=1.00e-04 | overfit_conf=95%
+  [epoch 01/10] train_loss=2.1387 val_loss=1.7692 train_acc=0.243 val_acc=0.355 (best=0.355)
+  [epoch 02/10] train_loss=1.8038 val_loss=1.6348 train_acc=0.346 val_acc=0.410 (best=0.410)
+  [epoch 03/10] train_loss=1.6792 val_loss=1.5534 train_acc=0.395 val_acc=0.445 (best=0.445)
+  [epoch 04/10] train_loss=1.6002 val_loss=1.4878 train_acc=0.426 val_acc=0.465 (best=0.465)
+  [epoch 05/10] train_loss=1.5448 val_loss=1.4752 train_acc=0.448 val_acc=0.471 (best=0.471)
+  [epoch 06/10] train_loss=1.4911 val_loss=1.4248 train_acc=0.471 val_acc=0.494 (best=0.494)
+  [epoch 07/10] train_loss=1.4469 val_loss=1.3999 train_acc=0.485 val_acc=0.504 (best=0.504)
+  [early] overfit_checking=True → stop (and EXCLUDE this candidate)
+[train] done: best_val_acc=0.5042 (epoch=7) | was_overfit=True
+  [proxy_eval/RAND] try=1/1 | act=relu/he, opt=AdamW → val=-inf
+  [proxy_eval/RAND] all tries overfit → score = -inf
+[train] start: L=6 U=784 D=0.250 act=sigmoid/xavier opt=AdamW lr=1.00e-03 wd=1.00e-04 | overfit_conf=95%
+  [epoch 01/10] train_loss=2.0254 val_loss=1.8331 train_acc=0.274 val_acc=0.353 (best=0.353)
+  [epoch 02/10] train_loss=1.8830 val_loss=1.7723 train_acc=0.325 val_acc=0.376 (best=0.376)
+  [epoch 03/10] train_loss=1.8336 val_loss=1.7383 train_acc=0.349 val_acc=0.386 (best=0.386)
+  [epoch 04/10] train_loss=1.7949 val_loss=1.7278 train_acc=0.365 val_acc=0.382 (best=0.386)
+  [epoch 05/10] train_loss=1.7621 val_loss=1.7028 train_acc=0.377 val_acc=0.398 (best=0.398)
+  [epoch 06/10] train_loss=1.7431 val_loss=1.6804 train_acc=0.387 val_acc=0.413 (best=0.413)
+  [early] overfit_checking=True → stop (and EXCLUDE this candidate)
+[train] done: best_val_acc=0.4128 (epoch=6) | was_overfit=True
+  [proxy_eval/RAND] try=1/1 | act=sigmoid/xavier, opt=AdamW → val=-inf
+  [proxy_eval/RAND] all tries overfit → score = -inf
+[train] start: L=6 U=544 D=0.125 act=relu/he opt=Adam lr=1.00e-03 wd=1.00e-04 | overfit_conf=95%
+  [epoch 01/10] train_loss=1.8639 val_loss=1.5986 train_acc=0.336 val_acc=0.428 (best=0.428)
+  [epoch 02/10] train_loss=1.5783 val_loss=1.5019 train_acc=0.438 val_acc=0.463 (best=0.463)
+  [epoch 03/10] train_loss=1.4567 val_loss=1.4124 train_acc=0.480 val_acc=0.496 (best=0.496)
+  [epoch 04/10] train_loss=1.3697 val_loss=1.3765 train_acc=0.512 val_acc=0.507 (best=0.507)
+  [epoch 05/10] train_loss=1.2888 val_loss=1.3704 train_acc=0.542 val_acc=0.518 (best=0.518)
+  [early] overfit_checking=True → stop (and EXCLUDE this candidate)
+[train] done: best_val_acc=0.5177 (epoch=5) | was_overfit=True
+  [proxy_eval/RAND] try=1/1 | act=relu/he, opt=Adam → val=-inf
+  [proxy_eval/RAND] all tries overfit → score = -inf
+[train] start: L=6 U=544 D=0.375 act=leakyrelu/he opt=AdamW lr=1.00e-03 wd=1.00e-04 | overfit_conf=95%
+  [epoch 01/10] train_loss=2.2325 val_loss=1.8032 train_acc=0.218 val_acc=0.349 (best=0.349)
+  [epoch 02/10] train_loss=1.8571 val_loss=1.6471 train_acc=0.320 val_acc=0.399 (best=0.399)
+  [epoch 03/10] train_loss=1.7174 val_loss=1.5776 train_acc=0.380 val_acc=0.431 (best=0.431)
+  [epoch 04/10] train_loss=1.6392 val_loss=1.5329 train_acc=0.410 val_acc=0.451 (best=0.451)
+  [epoch 05/10] train_loss=1.5763 val_loss=1.4826 train_acc=0.434 val_acc=0.467 (best=0.467)
+  [epoch 06/10] train_loss=1.5234 val_loss=1.4617 train_acc=0.451 val_acc=0.478 (best=0.478)
+  [epoch 07/10] train_loss=1.4853 val_loss=1.4275 train_acc=0.472 val_acc=0.495 (best=0.495)
+  [epoch 08/10] train_loss=1.4441 val_loss=1.4127 train_acc=0.484 val_acc=0.498 (best=0.498)
+  [epoch 09/10] train_loss=1.4142 val_loss=1.3995 train_acc=0.493 val_acc=0.504 (best=0.504)
+  [epoch 10/10] train_loss=1.4010 val_loss=1.3953 train_acc=0.500 val_acc=0.508 (best=0.508)
+[train] done: best_val_acc=0.5080 (epoch=10) | was_overfit=False
+  [proxy_eval/RAND] try=1/1 | act=leakyrelu/he, opt=AdamW → val=0.5080
+[train] start: L=8 U=339 D=0.113 act=sigmoid/xavier opt=SGD lr=1.00e-03 wd=1.00e-04 | overfit_conf=95%
+  [epoch 01/10] train_loss=2.3668 val_loss=2.2258 train_acc=0.107 val_acc=0.202 (best=0.202)
+  [epoch 02/10] train_loss=2.3213 val_loss=2.1512 train_acc=0.124 val_acc=0.238 (best=0.238)
+  [epoch 03/10] train_loss=2.2760 val_loss=2.0839 train_acc=0.146 val_acc=0.258 (best=0.258)
+  [epoch 04/10] train_loss=2.2292 val_loss=2.0385 train_acc=0.162 val_acc=0.267 (best=0.267)
+  [epoch 05/10] train_loss=2.1894 val_loss=2.0099 train_acc=0.178 val_acc=0.269 (best=0.269)
+  [early] overfit_checking=True → stop (and EXCLUDE this candidate)
+[train] done: best_val_acc=0.2693 (epoch=5) | was_overfit=True
+  [proxy_eval/RAND] try=1/1 | act=sigmoid/xavier, opt=SGD → val=-inf
+  [proxy_eval/RAND] all tries overfit → score = -inf
+[train] start: L=6 U=755 D=0.212 act=leakyrelu/he opt=Adam lr=1.00e-03 wd=1.00e-04 | overfit_conf=95%
+  [epoch 01/10] train_loss=1.9553 val_loss=1.6329 train_acc=0.313 val_acc=0.408 (best=0.408)
+  [epoch 02/10] train_loss=1.6284 val_loss=1.4990 train_acc=0.417 val_acc=0.464 (best=0.464)
+  [epoch 03/10] train_loss=1.5084 val_loss=1.4400 train_acc=0.463 val_acc=0.487 (best=0.487)
+  [epoch 04/10] train_loss=1.4188 val_loss=1.3771 train_acc=0.497 val_acc=0.509 (best=0.509)
+  [epoch 05/10] train_loss=1.3420 val_loss=1.3738 train_acc=0.520 val_acc=0.517 (best=0.517)
+  [epoch 06/10] train_loss=1.2790 val_loss=1.3248 train_acc=0.547 val_acc=0.528 (best=0.528)
+  [epoch 07/10] train_loss=1.2081 val_loss=1.3057 train_acc=0.569 val_acc=0.538 (best=0.538)
+  [early] overfit_checking=True → stop (and EXCLUDE this candidate)
+[train] done: best_val_acc=0.5384 (epoch=7) | was_overfit=True
+  [proxy_eval/RAND] try=1/1 | act=leakyrelu/he, opt=Adam → val=-inf
+  [proxy_eval/RAND] all tries overfit → score = -inf
+
+[SIH] round 1/7 | bounds L=(2, 10) U=(64, 1024) D=(0.0, 0.5)
+  top1: acc=0.5080, cfg={'layers': 6, 'units': 544, 'dropout': 0.375}
+  top2: acc=0.3374, cfg={'layers': 8, 'units': 544, 'dropout': 0.25}
+[SIH] gbest_val=0.5080, round_best=0.5080, no_improve=0
+[SIH] use_random_act/opt=True, repeats=1
+[train] start: L=9 U=904 D=0.438 act=relu/he opt=AdamW lr=1.00e-03 wd=1.00e-04 | overfit_conf=95%
+  [epoch 01/10] train_loss=2.4290 val_loss=2.1835 train_acc=0.151 val_acc=0.180 (best=0.180)
+  [epoch 02/10] train_loss=2.0203 val_loss=1.9483 train_acc=0.238 val_acc=0.270 (best=0.270)
+  [epoch 03/10] train_loss=1.8891 val_loss=1.7918 train_acc=0.296 val_acc=0.339 (best=0.339)
+  [epoch 04/10] train_loss=1.7879 val_loss=1.7154 train_acc=0.347 val_acc=0.380 (best=0.380)
+  [epoch 05/10] train_loss=1.6970 val_loss=1.6417 train_acc=0.380 val_acc=0.406 (best=0.406)
+  [epoch 06/10] train_loss=1.6370 val_loss=1.5834 train_acc=0.409 val_acc=0.429 (best=0.429)
+  [early] overfit_checking=True → stop (and EXCLUDE this candidate)
+[train] done: best_val_acc=0.4289 (epoch=6) | was_overfit=True
+  [proxy_eval/RAND] try=1/1 | act=relu/he, opt=AdamW → val=-inf
+  [proxy_eval/RAND] all tries overfit → score = -inf
+[train] start: L=8 U=904 D=0.438 act=relu/he opt=SGD lr=1.00e-03 wd=1.00e-04 | overfit_conf=95%
+  [epoch 01/10] train_loss=2.8203 val_loss=2.4828 train_acc=0.111 val_acc=0.097 (best=0.097)
+  [epoch 02/10] train_loss=2.6608 val_loss=2.6640 train_acc=0.121 val_acc=0.097 (best=0.097)
+  [epoch 03/10] train_loss=2.5468 val_loss=2.7784 train_acc=0.135 val_acc=0.097 (best=0.097)
+  [epoch 04/10] train_loss=2.4600 val_loss=2.8793 train_acc=0.142 val_acc=0.097 (best=0.097)
+  [early] overfit_checking=True → stop (and EXCLUDE this candidate)
+[train] done: best_val_acc=0.0969 (epoch=2) | was_overfit=True
+  [proxy_eval/RAND] try=1/1 | act=relu/he, opt=SGD → val=-inf
+  [proxy_eval/RAND] all tries overfit → score = -inf
+[train] start: L=10 U=904 D=0.438 act=tanh/xavier opt=Adam lr=1.00e-03 wd=1.00e-04 | overfit_conf=95%
+  [epoch 01/10] train_loss=2.3279 val_loss=1.9383 train_acc=0.210 val_acc=0.320 (best=0.320)
+  [epoch 02/10] train_loss=2.0069 val_loss=1.8305 train_acc=0.285 val_acc=0.347 (best=0.347)
+  [epoch 03/10] train_loss=1.8960 val_loss=1.7911 train_acc=0.325 val_acc=0.367 (best=0.367)
+  [epoch 04/10] train_loss=1.8382 val_loss=1.7681 train_acc=0.350 val_acc=0.378 (best=0.378)
+  [epoch 05/10] train_loss=1.7909 val_loss=1.7266 train_acc=0.368 val_acc=0.387 (best=0.387)
+  [epoch 06/10] train_loss=1.7461 val_loss=1.6957 train_acc=0.386 val_acc=0.401 (best=0.401)
+  [epoch 07/10] train_loss=1.7095 val_loss=1.6600 train_acc=0.399 val_acc=0.418 (best=0.418)
+  [epoch 08/10] train_loss=1.6805 val_loss=1.6540 train_acc=0.409 val_acc=0.430 (best=0.430)
+  [epoch 09/10] train_loss=1.6559 val_loss=1.6415 train_acc=0.420 val_acc=0.429 (best=0.430)
+  [epoch 10/10] train_loss=1.6403 val_loss=1.6327 train_acc=0.424 val_acc=0.435 (best=0.435)
+[train] done: best_val_acc=0.4355 (epoch=10) | was_overfit=False
+  [proxy_eval/RAND] try=1/1 | act=tanh/xavier, opt=Adam → val=0.4355
+[train] start: L=9 U=844 D=0.438 act=relu/he opt=AdamW lr=1.00e-03 wd=1.00e-04 | overfit_conf=95%
+  [epoch 01/10] train_loss=2.4253 val_loss=2.1278 train_acc=0.157 val_acc=0.193 (best=0.193)
+  [epoch 02/10] train_loss=2.0299 val_loss=1.9598 train_acc=0.235 val_acc=0.248 (best=0.248)
+  [epoch 03/10] train_loss=1.9002 val_loss=1.8331 train_acc=0.287 val_acc=0.320 (best=0.320)
+  [epoch 04/10] train_loss=1.8069 val_loss=1.7431 train_acc=0.333 val_acc=0.358 (best=0.358)
+  [early] overfit_checking=True → stop (and EXCLUDE this candidate)
+[train] done: best_val_acc=0.3577 (epoch=4) | was_overfit=True
+  [proxy_eval/RAND] try=1/1 | act=relu/he, opt=AdamW → val=-inf
+  [proxy_eval/RAND] all tries overfit → score = -inf
+[train] start: L=9 U=964 D=0.438 act=tanh/xavier opt=Adam lr=1.00e-03 wd=1.00e-04 | overfit_conf=95%
+  [epoch 01/10] train_loss=2.3249 val_loss=1.9335 train_acc=0.213 val_acc=0.307 (best=0.307)
+  [epoch 02/10] train_loss=1.9964 val_loss=1.8443 train_acc=0.293 val_acc=0.350 (best=0.350)
+  [epoch 03/10] train_loss=1.8783 val_loss=1.7762 train_acc=0.336 val_acc=0.375 (best=0.375)
+  [epoch 04/10] train_loss=1.8101 val_loss=1.7205 train_acc=0.357 val_acc=0.398 (best=0.398)
+  [epoch 05/10] train_loss=1.7605 val_loss=1.6884 train_acc=0.379 val_acc=0.407 (best=0.407)
+  [epoch 06/10] train_loss=1.7251 val_loss=1.6778 train_acc=0.394 val_acc=0.414 (best=0.414)
+  [epoch 07/10] train_loss=1.6873 val_loss=1.6478 train_acc=0.409 val_acc=0.428 (best=0.428)
+  [epoch 08/10] train_loss=1.6548 val_loss=1.6276 train_acc=0.422 val_acc=0.430 (best=0.430)
+  [epoch 09/10] train_loss=1.6292 val_loss=1.6141 train_acc=0.428 val_acc=0.439 (best=0.439)
+  [epoch 10/10] train_loss=1.6131 val_loss=1.6077 train_acc=0.435 val_acc=0.442 (best=0.442)
+[train] done: best_val_acc=0.4422 (epoch=10) | was_overfit=False
+  [proxy_eval/RAND] try=1/1 | act=tanh/xavier, opt=Adam → val=0.4422
+[train] start: L=9 U=904 D=0.406 act=relu/he opt=Adam lr=1.00e-03 wd=1.00e-04 | overfit_conf=95%
+  [epoch 01/10] train_loss=2.3852 val_loss=2.0641 train_acc=0.163 val_acc=0.216 (best=0.216)
+  [epoch 02/10] train_loss=1.9773 val_loss=1.8508 train_acc=0.264 val_acc=0.322 (best=0.322)
+  [epoch 03/10] train_loss=1.8330 val_loss=1.6867 train_acc=0.330 val_acc=0.385 (best=0.385)
+  [epoch 04/10] train_loss=1.7268 val_loss=1.6139 train_acc=0.376 val_acc=0.418 (best=0.418)
+  [early] overfit_checking=True → stop (and EXCLUDE this candidate)
+[train] done: best_val_acc=0.4181 (epoch=4) | was_overfit=True
+  [proxy_eval/RAND] try=1/1 | act=relu/he, opt=Adam → val=-inf
+  [proxy_eval/RAND] all tries overfit → score = -inf
+[train] start: L=9 U=904 D=0.469 act=leakyrelu/he opt=Adam lr=1.00e-03 wd=1.00e-04 | overfit_conf=95%
+  [epoch 01/10] train_loss=2.4751 val_loss=2.2742 train_acc=0.141 val_acc=0.158 (best=0.158)
+  [epoch 02/10] train_loss=2.0560 val_loss=2.0422 train_acc=0.214 val_acc=0.204 (best=0.204)
+  [epoch 03/10] train_loss=1.9346 val_loss=1.8560 train_acc=0.266 val_acc=0.308 (best=0.308)
+  [epoch 04/10] train_loss=1.8442 val_loss=1.7536 train_acc=0.317 val_acc=0.335 (best=0.335)
+  [epoch 05/10] train_loss=1.7530 val_loss=1.6669 train_acc=0.358 val_acc=0.387 (best=0.387)
+  [epoch 06/10] train_loss=1.6839 val_loss=1.6224 train_acc=0.388 val_acc=0.408 (best=0.408)
+  [epoch 07/10] train_loss=1.6342 val_loss=1.5814 train_acc=0.409 val_acc=0.416 (best=0.416)
+  [epoch 08/10] train_loss=1.5959 val_loss=1.5618 train_acc=0.426 val_acc=0.431 (best=0.431)
+  [epoch 09/10] train_loss=1.5598 val_loss=1.5366 train_acc=0.437 val_acc=0.444 (best=0.444)
+  [epoch 10/10] train_loss=1.5392 val_loss=1.5510 train_acc=0.443 val_acc=0.442 (best=0.444)
+[train] done: best_val_acc=0.4438 (epoch=9) | was_overfit=False
+  [proxy_eval/RAND] try=1/1 | act=leakyrelu/he, opt=Adam → val=0.4438
+[train] start: L=10 U=948 D=0.435 act=relu/he opt=AdamW lr=1.00e-03 wd=1.00e-04 | overfit_conf=95%
+  [epoch 01/10] train_loss=2.4887 val_loss=2.2478 train_acc=0.136 val_acc=0.171 (best=0.171)
+  [epoch 02/10] train_loss=2.0784 val_loss=2.0331 train_acc=0.214 val_acc=0.215 (best=0.215)
+  [epoch 03/10] train_loss=1.9460 val_loss=1.8688 train_acc=0.260 val_acc=0.288 (best=0.288)
+  [epoch 04/10] train_loss=1.8623 val_loss=1.7804 train_acc=0.299 val_acc=0.333 (best=0.333)
+  [epoch 05/10] train_loss=1.7796 val_loss=1.6838 train_acc=0.345 val_acc=0.389 (best=0.389)
+  [epoch 06/10] train_loss=1.6986 val_loss=1.6356 train_acc=0.383 val_acc=0.398 (best=0.398)
+  [epoch 07/10] train_loss=1.6358 val_loss=1.5854 train_acc=0.408 val_acc=0.425 (best=0.425)
+  [epoch 08/10] train_loss=1.5944 val_loss=1.5683 train_acc=0.427 val_acc=0.434 (best=0.434)
+  [epoch 09/10] train_loss=1.5626 val_loss=1.5515 train_acc=0.437 val_acc=0.443 (best=0.443)
+  [epoch 10/10] train_loss=1.5437 val_loss=1.5505 train_acc=0.444 val_acc=0.444 (best=0.444)
+  [early] overfit_checking=True → stop (and EXCLUDE this candidate)
+[train] done: best_val_acc=0.4435 (epoch=10) | was_overfit=True
+  [proxy_eval/RAND] try=1/1 | act=relu/he, opt=AdamW → val=-inf
+  [proxy_eval/RAND] all tries overfit → score = -inf
+[train] start: L=9 U=866 D=0.466 act=tanh/xavier opt=SGD lr=1.00e-03 wd=1.00e-04 | overfit_conf=95%
+  [epoch 01/10] train_loss=2.7567 val_loss=2.6235 train_acc=0.119 val_acc=0.234 (best=0.234)
+  [epoch 02/10] train_loss=2.5029 val_loss=2.7452 train_acc=0.155 val_acc=0.259 (best=0.259)
+  [epoch 03/10] train_loss=2.3720 val_loss=2.7209 train_acc=0.176 val_acc=0.271 (best=0.271)
+  [epoch 04/10] train_loss=2.2990 val_loss=2.6119 train_acc=0.188 val_acc=0.284 (best=0.284)
+  [epoch 05/10] train_loss=2.2494 val_loss=2.5801 train_acc=0.195 val_acc=0.293 (best=0.293)
+  [epoch 06/10] train_loss=2.2158 val_loss=2.5696 train_acc=0.203 val_acc=0.297 (best=0.297)
+  [epoch 07/10] train_loss=2.1918 val_loss=2.5475 train_acc=0.210 val_acc=0.299 (best=0.299)
+  [epoch 08/10] train_loss=2.1807 val_loss=2.5378 train_acc=0.213 val_acc=0.299 (best=0.299)
+  [epoch 09/10] train_loss=2.1650 val_loss=2.5366 train_acc=0.220 val_acc=0.300 (best=0.300)
+  [epoch 10/10] train_loss=2.1675 val_loss=2.5493 train_acc=0.216 val_acc=0.301 (best=0.301)
+[train] done: best_val_acc=0.3006 (epoch=10) | was_overfit=False
+  [proxy_eval/RAND] try=1/1 | act=tanh/xavier, opt=SGD → val=0.3006
+
+[SIH] round 2/7 | bounds L=(8, 10) U=(784, 1024) D=(0.375, 0.5)
+  top1: acc=0.4438, cfg={'layers': 9, 'units': 904, 'dropout': 0.46875}
+  top2: acc=0.4422, cfg={'layers': 9, 'units': 964, 'dropout': 0.4375}
+  top3: acc=0.4355, cfg={'layers': 10, 'units': 904, 'dropout': 0.4375}
+[SIH] gbest_val=0.5080, round_best=0.4438, no_improve=1
+[SIH] use_random_act/opt=True, repeats=1
+[train] start: L=10 U=994 D=0.484 act=tanh/xavier opt=AdamW lr=1.00e-03 wd=1.00e-04 | overfit_conf=95%
+  [epoch 01/10] train_loss=2.4154 val_loss=2.0288 train_acc=0.191 val_acc=0.300 (best=0.300)
+  [epoch 02/10] train_loss=2.0399 val_loss=1.9186 train_acc=0.272 val_acc=0.322 (best=0.322)
+  [epoch 03/10] train_loss=1.9438 val_loss=1.8314 train_acc=0.306 val_acc=0.352 (best=0.352)
+  [epoch 04/10] train_loss=1.8793 val_loss=1.8315 train_acc=0.332 val_acc=0.347 (best=0.352)
+  [early] overfit_checking=True → stop (and EXCLUDE this candidate)
+[train] done: best_val_acc=0.3520 (epoch=3) | was_overfit=True
+  [proxy_eval/RAND] try=1/1 | act=tanh/xavier, opt=AdamW → val=-inf
+  [proxy_eval/RAND] all tries overfit → score = -inf
+[train] start: L=10 U=994 D=0.484 act=tanh/xavier opt=Adam lr=1.00e-03 wd=1.00e-04 | overfit_conf=95%
+  [epoch 01/10] train_loss=2.4075 val_loss=1.9766 train_acc=0.192 val_acc=0.290 (best=0.290)
+  [epoch 02/10] train_loss=2.0436 val_loss=1.9190 train_acc=0.270 val_acc=0.324 (best=0.324)
+  [epoch 03/10] train_loss=1.9352 val_loss=1.8468 train_acc=0.309 val_acc=0.345 (best=0.345)
+  [epoch 04/10] train_loss=1.8763 val_loss=1.7951 train_acc=0.332 val_acc=0.361 (best=0.361)
+  [epoch 05/10] train_loss=1.8322 val_loss=1.7761 train_acc=0.349 val_acc=0.367 (best=0.367)
+  [epoch 06/10] train_loss=1.8000 val_loss=1.7428 train_acc=0.363 val_acc=0.383 (best=0.383)
+  [epoch 07/10] train_loss=1.7657 val_loss=1.7285 train_acc=0.376 val_acc=0.396 (best=0.396)
+  [epoch 08/10] train_loss=1.7378 val_loss=1.7137 train_acc=0.385 val_acc=0.394 (best=0.396)
+  [epoch 09/10] train_loss=1.7175 val_loss=1.6958 train_acc=0.391 val_acc=0.406 (best=0.406)
+  [epoch 10/10] train_loss=1.7021 val_loss=1.6872 train_acc=0.398 val_acc=0.404 (best=0.406)
+  [early] overfit_checking=True → stop (and EXCLUDE this candidate)
+[train] done: best_val_acc=0.4060 (epoch=9) | was_overfit=True
+  [proxy_eval/RAND] try=1/1 | act=tanh/xavier, opt=Adam → val=-inf
+  [proxy_eval/RAND] all tries overfit → score = -inf
+[train] start: L=10 U=994 D=0.484 act=sigmoid/xavier opt=AdamW lr=1.00e-03 wd=1.00e-04 | overfit_conf=95%
+  [epoch 01/10] train_loss=2.4258 val_loss=2.1522 train_acc=0.139 val_acc=0.181 (best=0.181)
+  [epoch 02/10] train_loss=2.2060 val_loss=2.0824 train_acc=0.165 val_acc=0.182 (best=0.182)
+  [epoch 03/10] train_loss=2.1484 val_loss=2.0630 train_acc=0.169 val_acc=0.171 (best=0.182)
+  [epoch 04/10] train_loss=2.1186 val_loss=2.0661 train_acc=0.171 val_acc=0.192 (best=0.192)
+  [epoch 05/10] train_loss=2.1034 val_loss=2.0489 train_acc=0.173 val_acc=0.177 (best=0.192)
+  [epoch 06/10] train_loss=2.0895 val_loss=2.0396 train_acc=0.175 val_acc=0.194 (best=0.194)
+  [epoch 07/10] train_loss=2.0787 val_loss=2.0452 train_acc=0.175 val_acc=0.196 (best=0.196)
+  [epoch 08/10] train_loss=2.0706 val_loss=2.0384 train_acc=0.177 val_acc=0.195 (best=0.196)
+  [epoch 09/10] train_loss=2.0677 val_loss=2.0349 train_acc=0.181 val_acc=0.193 (best=0.196)
+  [epoch 10/10] train_loss=2.0645 val_loss=2.0342 train_acc=0.177 val_acc=0.192 (best=0.196)
+  [early] patience reached → stop
+[train] done: best_val_acc=0.1961 (epoch=7) | was_overfit=False
+  [proxy_eval/RAND] try=1/1 | act=sigmoid/xavier, opt=AdamW → val=0.1961
+[train] start: L=10 U=979 D=0.484 act=tanh/xavier opt=Adam lr=1.00e-03 wd=1.00e-04 | overfit_conf=95%
+  [epoch 01/10] train_loss=2.4125 val_loss=2.0440 train_acc=0.190 val_acc=0.261 (best=0.261)
+  [epoch 02/10] train_loss=2.0387 val_loss=1.9140 train_acc=0.269 val_acc=0.320 (best=0.320)
+  [epoch 03/10] train_loss=1.9328 val_loss=1.8476 train_acc=0.307 val_acc=0.344 (best=0.344)
+  [epoch 04/10] train_loss=1.8725 val_loss=1.7977 train_acc=0.335 val_acc=0.368 (best=0.368)
+  [epoch 05/10] train_loss=1.8301 val_loss=1.7765 train_acc=0.350 val_acc=0.370 (best=0.370)
+  [epoch 06/10] train_loss=1.7959 val_loss=1.7522 train_acc=0.363 val_acc=0.387 (best=0.387)
+  [epoch 07/10] train_loss=1.7624 val_loss=1.7313 train_acc=0.376 val_acc=0.397 (best=0.397)
+  [epoch 08/10] train_loss=1.7362 val_loss=1.7006 train_acc=0.385 val_acc=0.402 (best=0.402)
+  [epoch 09/10] train_loss=1.7163 val_loss=1.6899 train_acc=0.394 val_acc=0.410 (best=0.410)
+  [epoch 10/10] train_loss=1.6986 val_loss=1.6825 train_acc=0.401 val_acc=0.408 (best=0.410)
+[train] done: best_val_acc=0.4099 (epoch=9) | was_overfit=False
+  [proxy_eval/RAND] try=1/1 | act=tanh/xavier, opt=Adam → val=0.4099
+[train] start: L=10 U=1009 D=0.484 act=sigmoid/xavier opt=Adam lr=1.00e-03 wd=1.00e-04 | overfit_conf=95%
+  [epoch 01/10] train_loss=2.4165 val_loss=2.0905 train_acc=0.140 val_acc=0.187 (best=0.187)
+  [epoch 02/10] train_loss=2.2074 val_loss=2.0731 train_acc=0.163 val_acc=0.173 (best=0.187)
+  [epoch 03/10] train_loss=2.1578 val_loss=2.0583 train_acc=0.167 val_acc=0.166 (best=0.187)
+  [epoch 04/10] train_loss=2.1361 val_loss=2.0490 train_acc=0.166 val_acc=0.187 (best=0.187)
+  [early] patience reached → stop
+[train] done: best_val_acc=0.1871 (epoch=1) | was_overfit=False
+  [proxy_eval/RAND] try=1/1 | act=sigmoid/xavier, opt=Adam → val=0.1871
+[train] start: L=10 U=994 D=0.477 act=tanh/xavier opt=SGD lr=1.00e-03 wd=1.00e-04 | overfit_conf=95%
+  [epoch 01/10] train_loss=2.8112 val_loss=2.3848 train_acc=0.105 val_acc=0.229 (best=0.229)
+  [epoch 02/10] train_loss=2.5804 val_loss=2.9718 train_acc=0.132 val_acc=0.236 (best=0.236)
+  [epoch 03/10] train_loss=2.4247 val_loss=2.9030 train_acc=0.159 val_acc=0.247 (best=0.247)
+  [epoch 04/10] train_loss=2.3464 val_loss=2.7900 train_acc=0.171 val_acc=0.253 (best=0.253)
+  [early] overfit_checking=True → stop (and EXCLUDE this candidate)
+[train] done: best_val_acc=0.2530 (epoch=4) | was_overfit=True
+  [proxy_eval/RAND] try=1/1 | act=tanh/xavier, opt=SGD → val=-inf
+  [proxy_eval/RAND] all tries overfit → score = -inf
+[train] start: L=10 U=994 D=0.492 act=tanh/xavier opt=SGD lr=1.00e-03 wd=1.00e-04 | overfit_conf=95%
+  [epoch 01/10] train_loss=2.8253 val_loss=2.2341 train_acc=0.106 val_acc=0.243 (best=0.243)
+  [epoch 02/10] train_loss=2.6178 val_loss=2.9857 train_acc=0.121 val_acc=0.231 (best=0.243)
+  [epoch 03/10] train_loss=2.4587 val_loss=3.0740 train_acc=0.149 val_acc=0.237 (best=0.243)
+  [epoch 04/10] train_loss=2.3677 val_loss=2.9363 train_acc=0.165 val_acc=0.243 (best=0.243)
+  [early] overfit_checking=True → stop (and EXCLUDE this candidate)
+  [early] patience reached → stop
+[train] done: best_val_acc=0.2428 (epoch=1) | was_overfit=True
+  [proxy_eval/RAND] try=1/1 | act=tanh/xavier, opt=SGD → val=-inf
+  [proxy_eval/RAND] all tries overfit → score = -inf
+[train] start: L=10 U=968 D=0.481 act=tanh/xavier opt=SGD lr=1.00e-03 wd=1.00e-04 | overfit_conf=95%
+  [epoch 01/10] train_loss=2.8050 val_loss=2.2767 train_acc=0.109 val_acc=0.246 (best=0.246)
+  [epoch 02/10] train_loss=2.5714 val_loss=3.0281 train_acc=0.133 val_acc=0.227 (best=0.246)
+  [epoch 03/10] train_loss=2.4249 val_loss=2.9442 train_acc=0.156 val_acc=0.241 (best=0.246)
+  [epoch 04/10] train_loss=2.3373 val_loss=2.8527 train_acc=0.169 val_acc=0.252 (best=0.252)
+  [early] overfit_checking=True → stop (and EXCLUDE this candidate)
+[train] done: best_val_acc=0.2518 (epoch=4) | was_overfit=True
+  [proxy_eval/RAND] try=1/1 | act=tanh/xavier, opt=SGD → val=-inf
+  [proxy_eval/RAND] all tries overfit → score = -inf
+[train] start: L=10 U=975 D=0.474 act=tanh/xavier opt=AdamW lr=1.00e-03 wd=1.00e-04 | overfit_conf=95%
+  [epoch 01/10] train_loss=2.3947 val_loss=2.0032 train_acc=0.193 val_acc=0.280 (best=0.280)
+  [epoch 02/10] train_loss=2.0517 val_loss=1.8827 train_acc=0.265 val_acc=0.329 (best=0.329)
+  [epoch 03/10] train_loss=1.9401 val_loss=1.8256 train_acc=0.302 val_acc=0.354 (best=0.354)
+  [epoch 04/10] train_loss=1.8759 val_loss=1.7960 train_acc=0.334 val_acc=0.357 (best=0.357)
+  [epoch 05/10] train_loss=1.8273 val_loss=1.7819 train_acc=0.348 val_acc=0.372 (best=0.372)
+  [early] overfit_checking=True → stop (and EXCLUDE this candidate)
+[train] done: best_val_acc=0.3720 (epoch=5) | was_overfit=True
+  [proxy_eval/RAND] try=1/1 | act=tanh/xavier, opt=AdamW → val=-inf
+  [proxy_eval/RAND] all tries overfit → score = -inf
+
+[SIH] round 3/7 | bounds L=(10, 10) U=(964, 1024) D=(0.46875, 0.5)
+  top1: acc=0.4099, cfg={'layers': 10, 'units': 979, 'dropout': 0.484375}
+  top2: acc=0.1961, cfg={'layers': 10, 'units': 994, 'dropout': 0.484375}
+  top3: acc=0.1871, cfg={'layers': 10, 'units': 1009, 'dropout': 0.484375}
+[SIH] gbest_val=0.5080, round_best=0.4099, no_improve=2
+[SIH] early stop: stagnation for 2 rounds (tol=0.0005)
+
+[SIH] done in 602.07s
+[SIH] Star:  L=6 U=544 D=0.375
+[SIH] Prev:  L=5 U=448 D=0.225
+[SIH] Next:  L=7 U=640 D=0.500
+
+========================================================================
+【STAGE 1】 SIH 전역 축소 → 최종 추정점 및 3개 베이스 생성
+========================================================================
+〈Star (center)〉
+               act : relu
+           dropout : 0.375
+            layers : 6
+                lr : 0.001
+             optim : Adam
+             units : 544
+            w_init : he
+      weight_decay : 0.0001
+〈Prev〉
+               act : relu
+           dropout : 0.225
+            layers : 5
+                lr : 0.001
+             optim : Adam
+             units : 448
+            w_init : he
+      weight_decay : 0.0001
+〈Next〉
+               act : relu
+           dropout : 0.5
+            layers : 7
+                lr : 0.001
+             optim : Adam
+             units : 640
+            w_init : he
+      weight_decay : 0.0001
+〈Star Summary〉
+                D* : 0.375
+                L* : 6
+                U* : 544
+================================================================================
+[SNAPSHOT] Base-1 after SIH: {'layers': 5, 'units': 448, 'dropout': 0.225, 'act': 'relu', 'w_init': 'he', 'optim': 'Adam', 'lr': 0.001, 'weight_decay': 0.0001}
+[SNAPSHOT] Base-2 after SIH: {'layers': 6, 'units': 544, 'dropout': 0.375, 'act': 'relu', 'w_init': 'he', 'optim': 'Adam', 'lr': 0.001, 'weight_decay': 0.0001}
+[SNAPSHOT] Base-3 after SIH: {'layers': 7, 'units': 640, 'dropout': 0.5, 'act': 'relu', 'w_init': 'he', 'optim': 'Adam', 'lr': 0.001, 'weight_decay': 0.0001}
+
+========================================================================
+【STAGE 2/3】 Base-1 정밀화 시작
+========================================================================
+
+[AI] Exhaustive (activation/init) for base: L=5 U=448 D=0.225
+[train] start: L=5 U=448 D=0.225 act=relu/he opt=Adam lr=1.00e-03 wd=1.00e-04 | overfit_conf=95%
+  [epoch 01/10] train_loss=1.9706 val_loss=1.6404 train_acc=0.304 val_acc=0.406 (best=0.406)
+  [epoch 02/10] train_loss=1.6783 val_loss=1.5274 train_acc=0.398 val_acc=0.450 (best=0.450)
+  [epoch 03/10] train_loss=1.5583 val_loss=1.4746 train_acc=0.438 val_acc=0.470 (best=0.470)
+  [epoch 04/10] train_loss=1.4821 val_loss=1.4186 train_acc=0.470 val_acc=0.498 (best=0.498)
+  [epoch 05/10] train_loss=1.4152 val_loss=1.3950 train_acc=0.493 val_acc=0.502 (best=0.502)
+  [epoch 06/10] train_loss=1.3522 val_loss=1.3556 train_acc=0.514 val_acc=0.519 (best=0.519)
+  [epoch 07/10] train_loss=1.3004 val_loss=1.3281 train_acc=0.534 val_acc=0.528 (best=0.528)
+  [epoch 08/10] train_loss=1.2533 val_loss=1.3158 train_acc=0.554 val_acc=0.532 (best=0.532)
+  [early] overfit_checking=True → stop (and EXCLUDE this candidate)
+[train] done: best_val_acc=0.5322 (epoch=8) | was_overfit=True
+  [AI] act=     relu / init=he     → overfit=True (excluded)
+[train] start: L=5 U=448 D=0.225 act=leakyrelu/he opt=Adam lr=1.00e-03 wd=1.00e-04 | overfit_conf=95%
+  [epoch 01/10] train_loss=1.9779 val_loss=1.6348 train_acc=0.304 val_acc=0.408 (best=0.408)
+  [epoch 02/10] train_loss=1.6760 val_loss=1.5211 train_acc=0.397 val_acc=0.452 (best=0.452)
+  [epoch 03/10] train_loss=1.5569 val_loss=1.4713 train_acc=0.443 val_acc=0.470 (best=0.470)
+  [epoch 04/10] train_loss=1.4730 val_loss=1.4372 train_acc=0.473 val_acc=0.485 (best=0.485)
+  [epoch 05/10] train_loss=1.4127 val_loss=1.3811 train_acc=0.493 val_acc=0.508 (best=0.508)
+  [epoch 06/10] train_loss=1.3486 val_loss=1.3749 train_acc=0.516 val_acc=0.510 (best=0.510)
+  [epoch 07/10] train_loss=1.2948 val_loss=1.3379 train_acc=0.537 val_acc=0.520 (best=0.520)
+  [epoch 08/10] train_loss=1.2483 val_loss=1.3212 train_acc=0.556 val_acc=0.532 (best=0.532)
+  [early] overfit_checking=True → stop (and EXCLUDE this candidate)
+[train] done: best_val_acc=0.5325 (epoch=8) | was_overfit=True
+  [AI] act=leakyrelu / init=he     → overfit=True (excluded)
+[train] start: L=5 U=448 D=0.225 act=sigmoid/xavier opt=Adam lr=1.00e-03 wd=1.00e-04 | overfit_conf=95%
+  [epoch 01/10] train_loss=1.9974 val_loss=1.7893 train_acc=0.275 val_acc=0.369 (best=0.369)
+  [epoch 02/10] train_loss=1.8742 val_loss=1.7670 train_acc=0.329 val_acc=0.370 (best=0.370)
+  [epoch 03/10] train_loss=1.8348 val_loss=1.7410 train_acc=0.345 val_acc=0.379 (best=0.379)
+  [epoch 04/10] train_loss=1.8098 val_loss=1.7195 train_acc=0.354 val_acc=0.399 (best=0.399)
+  [epoch 05/10] train_loss=1.7867 val_loss=1.7111 train_acc=0.368 val_acc=0.403 (best=0.403)
+  [epoch 06/10] train_loss=1.7687 val_loss=1.7030 train_acc=0.377 val_acc=0.402 (best=0.403)
+  [epoch 07/10] train_loss=1.7487 val_loss=1.6992 train_acc=0.384 val_acc=0.406 (best=0.406)
+  [early] overfit_checking=True → stop (and EXCLUDE this candidate)
+[train] done: best_val_acc=0.4060 (epoch=7) | was_overfit=True
+  [AI] act=  sigmoid / init=xavier → overfit=True (excluded)
+[train] start: L=5 U=448 D=0.225 act=tanh/xavier opt=Adam lr=1.00e-03 wd=1.00e-04 | overfit_conf=95%
+  [epoch 01/10] train_loss=1.9891 val_loss=1.7497 train_acc=0.305 val_acc=0.386 (best=0.386)
+  [epoch 02/10] train_loss=1.7725 val_loss=1.6747 train_acc=0.382 val_acc=0.424 (best=0.424)
+  [epoch 03/10] train_loss=1.6915 val_loss=1.6229 train_acc=0.413 val_acc=0.442 (best=0.442)
+  [epoch 04/10] train_loss=1.6313 val_loss=1.5727 train_acc=0.433 val_acc=0.454 (best=0.454)
+  [epoch 05/10] train_loss=1.5703 val_loss=1.5564 train_acc=0.456 val_acc=0.461 (best=0.461)
+  [epoch 06/10] train_loss=1.5266 val_loss=1.5212 train_acc=0.469 val_acc=0.480 (best=0.480)
+  [epoch 07/10] train_loss=1.4795 val_loss=1.4934 train_acc=0.485 val_acc=0.484 (best=0.484)
+  [early] overfit_checking=True → stop (and EXCLUDE this candidate)
+[train] done: best_val_acc=0.4839 (epoch=7) | was_overfit=True
+  [AI] act=     tanh / init=xavier → overfit=True (excluded)
+[AI] all overfit → keep base (will likely be excluded). time=96.55s
+
+================================================================================
+【STAGE 2】 (Base) 활성화·초기화 전수 결과 - 선택 조합
+================================================================================
+【SELECTED HYPERPARAMETERS】
+               act : relu
+           dropout : 0.225
+            layers : 5
+                lr : 0.001
+             optim : Adam
+             units : 448
+            w_init : he
+      weight_decay : 0.0001
+================================================================================
+[SNAPSHOT] Base-1 after AI: {'layers': 5, 'units': 448, 'dropout': 0.225, 'act': 'relu', 'w_init': 'he', 'optim': 'Adam', 'lr': 0.001, 'weight_decay': 0.0001}
+[PSO-OPT] start base (L=5 U=448 D=0.225 act=relu/he)
+[train] start: L=5 U=448 D=0.225 act=relu/he opt=Adam lr=6.11e-03 wd=1.39e-05 | overfit_conf=95%
+  [epoch 01/10] train_loss=1.8979 val_loss=1.6393 train_acc=0.323 val_acc=0.406 (best=0.406)
+  [epoch 02/10] train_loss=1.6364 val_loss=1.5436 train_acc=0.415 val_acc=0.448 (best=0.448)
+  [epoch 03/10] train_loss=1.5227 val_loss=1.4707 train_acc=0.455 val_acc=0.479 (best=0.479)
+  [epoch 04/10] train_loss=1.4404 val_loss=1.4471 train_acc=0.486 val_acc=0.477 (best=0.479)
+  [early] overfit_checking=True → stop (and EXCLUDE this candidate)
+[train] done: best_val_acc=0.4794 (epoch=3) | was_overfit=True
+  [OPT+PSO] evaluator overfit=True → score=-inf
+[train] start: L=5 U=448 D=0.225 act=relu/he opt=AdamW lr=8.08e-05 wd=1.60e-04 | overfit_conf=95%
+  [epoch 01/10] train_loss=2.3326 val_loss=1.8729 train_acc=0.204 val_acc=0.325 (best=0.325)
+  [epoch 02/10] train_loss=2.0260 val_loss=1.7852 train_acc=0.290 val_acc=0.354 (best=0.354)
+  [epoch 03/10] train_loss=1.9122 val_loss=1.7143 train_acc=0.324 val_acc=0.384 (best=0.384)
+  [epoch 04/10] train_loss=1.8391 val_loss=1.6796 train_acc=0.347 val_acc=0.398 (best=0.398)
+  [epoch 05/10] train_loss=1.7927 val_loss=1.6363 train_acc=0.362 val_acc=0.418 (best=0.418)
+  [epoch 06/10] train_loss=1.7457 val_loss=1.6195 train_acc=0.377 val_acc=0.424 (best=0.424)
+  [early] overfit_checking=True → stop (and EXCLUDE this candidate)
+[train] done: best_val_acc=0.4241 (epoch=6) | was_overfit=True
+  [OPT+PSO] evaluator overfit=True → score=-inf
+[train] start: L=5 U=448 D=0.225 act=relu/he opt=Adam lr=7.55e-03 wd=4.93e-05 | overfit_conf=95%
+  [epoch 01/10] train_loss=1.8979 val_loss=1.6373 train_acc=0.325 val_acc=0.404 (best=0.404)
+  [epoch 02/10] train_loss=1.6492 val_loss=1.5625 train_acc=0.407 val_acc=0.449 (best=0.449)
+  [epoch 03/10] train_loss=1.5518 val_loss=1.4984 train_acc=0.446 val_acc=0.462 (best=0.462)
+  [epoch 04/10] train_loss=1.4842 val_loss=1.4798 train_acc=0.471 val_acc=0.477 (best=0.477)
+  [epoch 05/10] train_loss=1.4324 val_loss=1.4469 train_acc=0.490 val_acc=0.481 (best=0.481)
+  [epoch 06/10] train_loss=1.3740 val_loss=1.3850 train_acc=0.510 val_acc=0.506 (best=0.506)
+  [epoch 07/10] train_loss=1.3088 val_loss=1.3422 train_acc=0.535 val_acc=0.520 (best=0.520)
+  [early] overfit_checking=True → stop (and EXCLUDE this candidate)
+[train] done: best_val_acc=0.5204 (epoch=7) | was_overfit=True
+  [OPT+PSO] evaluator overfit=True → score=-inf
+[train] start: L=5 U=448 D=0.225 act=relu/he opt=AdamW lr=8.38e-02 wd=5.49e-04 | overfit_conf=95%
+  [epoch 01/10] train_loss=2.3899 val_loss=1.9896 train_acc=0.160 val_acc=0.243 (best=0.243)
+  [epoch 02/10] train_loss=1.9899 val_loss=1.8417 train_acc=0.239 val_acc=0.312 (best=0.312)
+  [epoch 03/10] train_loss=1.8705 val_loss=1.7630 train_acc=0.303 val_acc=0.346 (best=0.346)
+  [epoch 04/10] train_loss=1.7924 val_loss=1.6419 train_acc=0.343 val_acc=0.392 (best=0.392)
+  [epoch 05/10] train_loss=1.7295 val_loss=1.6379 train_acc=0.371 val_acc=0.411 (best=0.411)
+  [early] overfit_checking=True → stop (and EXCLUDE this candidate)
+[train] done: best_val_acc=0.4113 (epoch=5) | was_overfit=True
+  [OPT+PSO] evaluator overfit=True → score=-inf
+[train] start: L=5 U=448 D=0.225 act=relu/he opt=AdamW lr=8.39e-04 wd=3.70e-05 | overfit_conf=95%
+  [epoch 01/10] train_loss=1.9864 val_loss=1.6521 train_acc=0.297 val_acc=0.405 (best=0.405)
+  [epoch 02/10] train_loss=1.6937 val_loss=1.5244 train_acc=0.391 val_acc=0.454 (best=0.454)
+  [epoch 03/10] train_loss=1.5710 val_loss=1.4706 train_acc=0.434 val_acc=0.473 (best=0.473)
+  [epoch 04/10] train_loss=1.4858 val_loss=1.4173 train_acc=0.468 val_acc=0.495 (best=0.495)
+  [epoch 05/10] train_loss=1.4218 val_loss=1.3886 train_acc=0.490 val_acc=0.504 (best=0.504)
+  [epoch 06/10] train_loss=1.3628 val_loss=1.3700 train_acc=0.514 val_acc=0.512 (best=0.512)
+  [epoch 07/10] train_loss=1.3179 val_loss=1.3520 train_acc=0.530 val_acc=0.517 (best=0.517)
+  [epoch 08/10] train_loss=1.2748 val_loss=1.3303 train_acc=0.544 val_acc=0.526 (best=0.526)
+  [early] overfit_checking=True → stop (and EXCLUDE this candidate)
+[train] done: best_val_acc=0.5258 (epoch=8) | was_overfit=True
+  [OPT+PSO] evaluator overfit=True → score=-inf
+  [PSO-OPT] all candidates overfit in this iter → stop and fallback
+[PSO-OPT] done: gbest=-inf (no feasible). time=96.72s
+[OPT+PSO] all PSO candidates overfit → keep AI-best hyperparams
+[train] start: L=5 U=448 D=0.225 act=relu/he opt=Adam lr=1.00e-03 wd=1.00e-04 | overfit_conf=95%
+  [epoch 01/10] train_loss=1.9670 val_loss=1.6493 train_acc=0.301 val_acc=0.406 (best=0.406)
+  [epoch 02/10] train_loss=1.6772 val_loss=1.5616 train_acc=0.398 val_acc=0.443 (best=0.443)
+  [epoch 03/10] train_loss=1.5467 val_loss=1.4613 train_acc=0.446 val_acc=0.480 (best=0.480)
+  [epoch 04/10] train_loss=1.4716 val_loss=1.4284 train_acc=0.472 val_acc=0.488 (best=0.488)
+  [epoch 05/10] train_loss=1.4076 val_loss=1.3732 train_acc=0.497 val_acc=0.509 (best=0.509)
+  [epoch 06/10] train_loss=1.3492 val_loss=1.3533 train_acc=0.521 val_acc=0.521 (best=0.521)
+  [early] overfit_checking=True → stop (and EXCLUDE this candidate)
+[train] done: best_val_acc=0.5213 (epoch=6) | was_overfit=True
+[OPT+PSO] final overfit=True → val=-inf
+
+================================================================================
+【STAGE 3】 (Base) PSO(optim+lr+wd) 결과 - 선택 조합
+================================================================================
+【SELECTED HYPERPARAMETERS】
+               act : relu
+           dropout : 0.225
+            layers : 5
+                lr : 0.001
+             optim : Adam
+             units : 448
+            w_init : he
+      weight_decay : 0.0001
+================================================================================
+[SNAPSHOT] Base-1 after PSO: {'layers': 5, 'units': 448, 'dropout': 0.225, 'act': 'relu', 'w_init': 'he', 'optim': 'Adam', 'lr': 0.001, 'weight_decay': 0.0001}
+[Stage] Base-1 result: overfit → excluded
+================================================================================
+
+========================================================================
+【STAGE 2/3】 Base-2 정밀화 시작
+========================================================================
+
+[AI] Exhaustive (activation/init) for base: L=6 U=544 D=0.375
+[train] start: L=6 U=544 D=0.375 act=relu/he opt=Adam lr=1.00e-03 wd=1.00e-04 | overfit_conf=95%
+  [epoch 01/10] train_loss=2.2240 val_loss=1.8363 train_acc=0.221 val_acc=0.332 (best=0.332)
+  [epoch 02/10] train_loss=1.8531 val_loss=1.6726 train_acc=0.326 val_acc=0.392 (best=0.392)
+  [epoch 03/10] train_loss=1.7164 val_loss=1.5764 train_acc=0.375 val_acc=0.433 (best=0.433)
+  [epoch 04/10] train_loss=1.6401 val_loss=1.5334 train_acc=0.409 val_acc=0.447 (best=0.447)
+  [epoch 05/10] train_loss=1.5779 val_loss=1.4832 train_acc=0.434 val_acc=0.470 (best=0.470)
+  [early] overfit_checking=True → stop (and EXCLUDE this candidate)
+[train] done: best_val_acc=0.4701 (epoch=5) | was_overfit=True
+  [AI] act=     relu / init=he     → overfit=True (excluded)
+[train] start: L=6 U=544 D=0.375 act=leakyrelu/he opt=Adam lr=1.00e-03 wd=1.00e-04 | overfit_conf=95%
+  [epoch 01/10] train_loss=2.2280 val_loss=1.8085 train_acc=0.219 val_acc=0.347 (best=0.347)
+  [epoch 02/10] train_loss=1.8504 val_loss=1.6642 train_acc=0.323 val_acc=0.387 (best=0.387)
+  [epoch 03/10] train_loss=1.7198 val_loss=1.5954 train_acc=0.374 val_acc=0.422 (best=0.422)
+  [epoch 04/10] train_loss=1.6315 val_loss=1.5449 train_acc=0.414 val_acc=0.449 (best=0.449)
+  [epoch 05/10] train_loss=1.5740 val_loss=1.4838 train_acc=0.436 val_acc=0.467 (best=0.467)
+  [epoch 06/10] train_loss=1.5140 val_loss=1.4596 train_acc=0.459 val_acc=0.474 (best=0.474)
+  [epoch 07/10] train_loss=1.4723 val_loss=1.4254 train_acc=0.477 val_acc=0.492 (best=0.492)
+  [epoch 08/10] train_loss=1.4385 val_loss=1.4054 train_acc=0.487 val_acc=0.500 (best=0.500)
+  [early] overfit_checking=True → stop (and EXCLUDE this candidate)
+[train] done: best_val_acc=0.4996 (epoch=8) | was_overfit=True
+  [AI] act=leakyrelu / init=he     → overfit=True (excluded)
+[train] start: L=6 U=544 D=0.375 act=sigmoid/xavier opt=Adam lr=1.00e-03 wd=1.00e-04 | overfit_conf=95%
+  [epoch 01/10] train_loss=2.1786 val_loss=1.8821 train_acc=0.195 val_acc=0.311 (best=0.311)
+  [epoch 02/10] train_loss=2.0171 val_loss=1.8711 train_acc=0.254 val_acc=0.313 (best=0.313)
+  [epoch 03/10] train_loss=1.9698 val_loss=1.8563 train_acc=0.271 val_acc=0.318 (best=0.318)
+  [epoch 04/10] train_loss=1.9495 val_loss=1.8408 train_acc=0.282 val_acc=0.325 (best=0.325)
+  [epoch 05/10] train_loss=1.9236 val_loss=1.8318 train_acc=0.291 val_acc=0.332 (best=0.332)
+  [epoch 06/10] train_loss=1.9206 val_loss=1.8315 train_acc=0.290 val_acc=0.328 (best=0.332)
+  [early] overfit_checking=True → stop (and EXCLUDE this candidate)
+[train] done: best_val_acc=0.3318 (epoch=5) | was_overfit=True
+  [AI] act=  sigmoid / init=xavier → overfit=True (excluded)
+[train] start: L=6 U=544 D=0.375 act=tanh/xavier opt=Adam lr=1.00e-03 wd=1.00e-04 | overfit_conf=95%
+  [epoch 01/10] train_loss=2.1622 val_loss=1.8471 train_acc=0.256 val_acc=0.348 (best=0.348)
+  [epoch 02/10] train_loss=1.8961 val_loss=1.7405 train_acc=0.333 val_acc=0.388 (best=0.388)
+  [epoch 03/10] train_loss=1.7983 val_loss=1.6802 train_acc=0.372 val_acc=0.414 (best=0.414)
+  [epoch 04/10] train_loss=1.7405 val_loss=1.6652 train_acc=0.393 val_acc=0.426 (best=0.426)
+  [epoch 05/10] train_loss=1.6852 val_loss=1.6327 train_acc=0.412 val_acc=0.434 (best=0.434)
+  [epoch 06/10] train_loss=1.6508 val_loss=1.6058 train_acc=0.427 val_acc=0.449 (best=0.449)
+  [epoch 07/10] train_loss=1.6152 val_loss=1.5971 train_acc=0.438 val_acc=0.450 (best=0.450)
+  [early] overfit_checking=True → stop (and EXCLUDE this candidate)
+[train] done: best_val_acc=0.4504 (epoch=7) | was_overfit=True
+  [AI] act=     tanh / init=xavier → overfit=True (excluded)
+[AI] all overfit → keep base (will likely be excluded). time=83.62s
+
+================================================================================
+【STAGE 2】 (Base) 활성화·초기화 전수 결과 - 선택 조합
+================================================================================
+【SELECTED HYPERPARAMETERS】
+               act : relu
+           dropout : 0.375
+            layers : 6
+                lr : 0.001
+             optim : Adam
+             units : 544
+            w_init : he
+      weight_decay : 0.0001
+================================================================================
+[SNAPSHOT] Base-2 after AI: {'layers': 6, 'units': 544, 'dropout': 0.375, 'act': 'relu', 'w_init': 'he', 'optim': 'Adam', 'lr': 0.001, 'weight_decay': 0.0001}
+[PSO-OPT] start base (L=6 U=544 D=0.375 act=relu/he)
+[train] start: L=6 U=544 D=0.375 act=relu/he opt=Adam lr=6.11e-03 wd=1.39e-05 | overfit_conf=95%
+  [epoch 01/10] train_loss=2.0530 val_loss=1.7695 train_acc=0.272 val_acc=0.355 (best=0.355)
+  [epoch 02/10] train_loss=1.7510 val_loss=1.5948 train_acc=0.367 val_acc=0.427 (best=0.427)
+  [epoch 03/10] train_loss=1.6522 val_loss=1.5612 train_acc=0.410 val_acc=0.434 (best=0.434)
+  [epoch 04/10] train_loss=1.5774 val_loss=1.4922 train_acc=0.436 val_acc=0.471 (best=0.471)
+  [epoch 05/10] train_loss=1.5169 val_loss=1.4556 train_acc=0.464 val_acc=0.481 (best=0.481)
+  [epoch 06/10] train_loss=1.4576 val_loss=1.4023 train_acc=0.483 val_acc=0.504 (best=0.504)
+  [epoch 07/10] train_loss=1.3964 val_loss=1.3655 train_acc=0.505 val_acc=0.519 (best=0.519)
+  [epoch 08/10] train_loss=1.3407 val_loss=1.3475 train_acc=0.526 val_acc=0.523 (best=0.523)
+  [epoch 09/10] train_loss=1.2959 val_loss=1.3209 train_acc=0.542 val_acc=0.527 (best=0.527)
+  [early] overfit_checking=True → stop (and EXCLUDE this candidate)
+[train] done: best_val_acc=0.5270 (epoch=9) | was_overfit=True
+  [OPT+PSO] evaluator overfit=True → score=-inf
+[train] start: L=6 U=544 D=0.375 act=relu/he opt=AdamW lr=8.08e-05 wd=1.60e-04 | overfit_conf=95%
+  [epoch 01/10] train_loss=2.6817 val_loss=2.2421 train_acc=0.133 val_acc=0.162 (best=0.162)
+  [epoch 02/10] train_loss=2.4089 val_loss=2.1843 train_acc=0.179 val_acc=0.201 (best=0.201)
+  [epoch 03/10] train_loss=2.2600 val_loss=2.1427 train_acc=0.209 val_acc=0.219 (best=0.219)
+  [epoch 04/10] train_loss=2.1808 val_loss=2.0829 train_acc=0.224 val_acc=0.243 (best=0.243)
+  [epoch 05/10] train_loss=2.1160 val_loss=2.0592 train_acc=0.243 val_acc=0.255 (best=0.255)
+  [epoch 06/10] train_loss=2.0772 val_loss=2.0510 train_acc=0.256 val_acc=0.264 (best=0.264)
+  [epoch 07/10] train_loss=2.0393 val_loss=2.0052 train_acc=0.265 val_acc=0.273 (best=0.273)
+  [epoch 08/10] train_loss=2.0211 val_loss=2.0151 train_acc=0.272 val_acc=0.276 (best=0.276)
+  [early] overfit_checking=True → stop (and EXCLUDE this candidate)
+[train] done: best_val_acc=0.2755 (epoch=8) | was_overfit=True
+  [OPT+PSO] evaluator overfit=True → score=-inf
+[train] start: L=6 U=544 D=0.375 act=relu/he opt=Adam lr=7.55e-03 wd=4.93e-05 | overfit_conf=95%
+  [epoch 01/10] train_loss=2.0606 val_loss=1.7898 train_acc=0.270 val_acc=0.326 (best=0.326)
+  [epoch 02/10] train_loss=1.7629 val_loss=1.6561 train_acc=0.365 val_acc=0.403 (best=0.403)
+  [epoch 03/10] train_loss=1.6763 val_loss=1.5642 train_acc=0.405 val_acc=0.436 (best=0.436)
+  [epoch 04/10] train_loss=1.6119 val_loss=1.5258 train_acc=0.424 val_acc=0.450 (best=0.450)
+  [early] overfit_checking=True → stop (and EXCLUDE this candidate)
+[train] done: best_val_acc=0.4500 (epoch=4) | was_overfit=True
+  [OPT+PSO] evaluator overfit=True → score=-inf
+[train] start: L=6 U=544 D=0.375 act=relu/he opt=AdamW lr=8.38e-02 wd=5.49e-04 | overfit_conf=95%
+  [epoch 01/10] train_loss=2.5329 val_loss=2.2986 train_acc=0.104 val_acc=0.103 (best=0.103)
+  [epoch 02/10] train_loss=2.2961 val_loss=2.2804 train_acc=0.112 val_acc=0.140 (best=0.140)
+  [epoch 03/10] train_loss=2.2347 val_loss=2.0925 train_acc=0.145 val_acc=0.178 (best=0.178)
+  [epoch 04/10] train_loss=2.1375 val_loss=2.0233 train_acc=0.170 val_acc=0.200 (best=0.200)
+  [epoch 05/10] train_loss=2.0530 val_loss=1.9367 train_acc=0.205 val_acc=0.242 (best=0.242)
+  [epoch 06/10] train_loss=1.9860 val_loss=1.8648 train_acc=0.232 val_acc=0.292 (best=0.292)
+  [epoch 07/10] train_loss=1.9307 val_loss=1.8032 train_acc=0.257 val_acc=0.310 (best=0.310)
+  [epoch 08/10] train_loss=1.8863 val_loss=1.7699 train_acc=0.282 val_acc=0.329 (best=0.329)
+  [epoch 09/10] train_loss=1.8590 val_loss=1.7517 train_acc=0.294 val_acc=0.346 (best=0.346)
+  [epoch 10/10] train_loss=1.8425 val_loss=1.7426 train_acc=0.303 val_acc=0.349 (best=0.349)
+[train] done: best_val_acc=0.3492 (epoch=10) | was_overfit=False
+[train] start: L=6 U=544 D=0.375 act=relu/he opt=AdamW lr=8.39e-04 wd=3.70e-05 | overfit_conf=95%
+  [epoch 01/10] train_loss=2.2749 val_loss=1.8536 train_acc=0.208 val_acc=0.326 (best=0.326)
+  [epoch 02/10] train_loss=1.8951 val_loss=1.6950 train_acc=0.311 val_acc=0.378 (best=0.378)
+  [epoch 03/10] train_loss=1.7472 val_loss=1.6203 train_acc=0.363 val_acc=0.409 (best=0.409)
+  [epoch 04/10] train_loss=1.6570 val_loss=1.5605 train_acc=0.403 val_acc=0.438 (best=0.438)
+  [epoch 05/10] train_loss=1.5956 val_loss=1.5248 train_acc=0.428 val_acc=0.448 (best=0.448)
+  [epoch 06/10] train_loss=1.5466 val_loss=1.4798 train_acc=0.445 val_acc=0.470 (best=0.470)
+  [epoch 07/10] train_loss=1.5071 val_loss=1.4634 train_acc=0.461 val_acc=0.483 (best=0.483)
+  [epoch 08/10] train_loss=1.4708 val_loss=1.4511 train_acc=0.476 val_acc=0.488 (best=0.488)
+  [epoch 09/10] train_loss=1.4461 val_loss=1.4397 train_acc=0.481 val_acc=0.491 (best=0.491)
+  [epoch 10/10] train_loss=1.4283 val_loss=1.4264 train_acc=0.489 val_acc=0.497 (best=0.497)
+[train] done: best_val_acc=0.4973 (epoch=10) | was_overfit=False
+  [PSO-OPT] iter 1/6: iter_best=0.4973 | gbest=0.4973 (opt=AdamW, lr=8.39e-04, wd=3.70e-05)
+[train] start: L=6 U=544 D=0.375 act=relu/he opt=AdamW lr=8.05e-04 wd=3.78e-05 | overfit_conf=95%
+  [epoch 01/10] train_loss=2.2644 val_loss=1.8468 train_acc=0.211 val_acc=0.331 (best=0.331)
+  [epoch 02/10] train_loss=1.8963 val_loss=1.7025 train_acc=0.304 val_acc=0.379 (best=0.379)
+  [epoch 03/10] train_loss=1.7547 val_loss=1.6140 train_acc=0.363 val_acc=0.417 (best=0.417)
+  [epoch 04/10] train_loss=1.6680 val_loss=1.5428 train_acc=0.400 val_acc=0.451 (best=0.451)
+  [epoch 05/10] train_loss=1.6059 val_loss=1.5085 train_acc=0.422 val_acc=0.458 (best=0.458)
+  [epoch 06/10] train_loss=1.5508 val_loss=1.4900 train_acc=0.442 val_acc=0.466 (best=0.466)
+  [epoch 07/10] train_loss=1.5139 val_loss=1.4543 train_acc=0.458 val_acc=0.482 (best=0.482)
+  [epoch 08/10] train_loss=1.4758 val_loss=1.4382 train_acc=0.473 val_acc=0.487 (best=0.487)
+  [epoch 09/10] train_loss=1.4542 val_loss=1.4272 train_acc=0.478 val_acc=0.492 (best=0.492)
+  [early] overfit_checking=True → stop (and EXCLUDE this candidate)
+[train] done: best_val_acc=0.4923 (epoch=9) | was_overfit=True
+  [OPT+PSO] evaluator overfit=True → score=-inf
+[train] start: L=6 U=544 D=0.375 act=relu/he opt=AdamW lr=1.47e-04 wd=1.10e-04 | overfit_conf=95%
+  [epoch 01/10] train_loss=2.5744 val_loss=2.1205 train_acc=0.145 val_acc=0.215 (best=0.215)
+  [epoch 02/10] train_loss=2.2709 val_loss=2.0544 train_acc=0.205 val_acc=0.251 (best=0.251)
+  [epoch 03/10] train_loss=2.1125 val_loss=1.9619 train_acc=0.246 val_acc=0.285 (best=0.285)
+  [epoch 04/10] train_loss=2.0304 val_loss=1.9184 train_acc=0.266 val_acc=0.300 (best=0.300)
+  [epoch 05/10] train_loss=1.9621 val_loss=1.8823 train_acc=0.285 val_acc=0.316 (best=0.316)
+  [epoch 06/10] train_loss=1.9141 val_loss=1.8641 train_acc=0.301 val_acc=0.328 (best=0.328)
+  [epoch 07/10] train_loss=1.8803 val_loss=1.8425 train_acc=0.310 val_acc=0.330 (best=0.330)
+  [early] overfit_checking=True → stop (and EXCLUDE this candidate)
+[train] done: best_val_acc=0.3303 (epoch=7) | was_overfit=True
+  [OPT+PSO] evaluator overfit=True → score=-inf
+[train] start: L=6 U=544 D=0.375 act=relu/he opt=Adam lr=5.54e-04 wd=3.51e-05 | overfit_conf=95%
+  [epoch 01/10] train_loss=2.3335 val_loss=1.9350 train_acc=0.195 val_acc=0.293 (best=0.293)
+  [epoch 02/10] train_loss=1.9653 val_loss=1.7858 train_acc=0.286 val_acc=0.345 (best=0.345)
+  [epoch 03/10] train_loss=1.8265 val_loss=1.6730 train_acc=0.333 val_acc=0.394 (best=0.394)
+  [epoch 04/10] train_loss=1.7362 val_loss=1.6161 train_acc=0.368 val_acc=0.420 (best=0.420)
+  [early] overfit_checking=True → stop (and EXCLUDE this candidate)
+[train] done: best_val_acc=0.4203 (epoch=4) | was_overfit=True
+  [OPT+PSO] evaluator overfit=True → score=-inf
+[train] start: L=6 U=544 D=0.375 act=relu/he opt=AdamW lr=8.14e-03 wd=1.40e-04 | overfit_conf=95%
+  [epoch 01/10] train_loss=2.0467 val_loss=1.7156 train_acc=0.276 val_acc=0.377 (best=0.377)
+  [epoch 02/10] train_loss=1.7427 val_loss=1.6337 train_acc=0.374 val_acc=0.413 (best=0.413)
+  [epoch 03/10] train_loss=1.6457 val_loss=1.5370 train_acc=0.416 val_acc=0.446 (best=0.446)
+  [epoch 04/10] train_loss=1.5752 val_loss=1.4851 train_acc=0.442 val_acc=0.469 (best=0.469)
+  [early] overfit_checking=True → stop (and EXCLUDE this candidate)
+[train] done: best_val_acc=0.4691 (epoch=4) | was_overfit=True
+  [OPT+PSO] evaluator overfit=True → score=-inf
+[train] start: L=6 U=544 D=0.375 act=relu/he opt=AdamW lr=8.39e-04 wd=3.70e-05 | overfit_conf=95%
+  [epoch 01/10] train_loss=2.2548 val_loss=1.8295 train_acc=0.213 val_acc=0.324 (best=0.324)
+  [epoch 02/10] train_loss=1.8866 val_loss=1.6905 train_acc=0.312 val_acc=0.380 (best=0.380)
+  [epoch 03/10] train_loss=1.7551 val_loss=1.6018 train_acc=0.361 val_acc=0.419 (best=0.419)
+  [epoch 04/10] train_loss=1.6627 val_loss=1.5555 train_acc=0.395 val_acc=0.444 (best=0.444)
+  [epoch 05/10] train_loss=1.6012 val_loss=1.5091 train_acc=0.423 val_acc=0.457 (best=0.457)
+  [epoch 06/10] train_loss=1.5532 val_loss=1.4778 train_acc=0.440 val_acc=0.469 (best=0.469)
+  [early] overfit_checking=True → stop (and EXCLUDE this candidate)
+[train] done: best_val_acc=0.4695 (epoch=6) | was_overfit=True
+  [OPT+PSO] evaluator overfit=True → score=-inf
+  [PSO-OPT] iter 2/6: iter_best=-inf | gbest=0.4973 (opt=AdamW, lr=8.39e-04, wd=3.70e-05)
+[train] start: L=6 U=544 D=0.375 act=relu/he opt=AdamW lr=2.00e-04 wd=7.50e-05 | overfit_conf=95%
+  [epoch 01/10] train_loss=2.5338 val_loss=2.1211 train_acc=0.152 val_acc=0.229 (best=0.229)
+  [epoch 02/10] train_loss=2.1965 val_loss=1.9825 train_acc=0.224 val_acc=0.269 (best=0.269)
+  [epoch 03/10] train_loss=2.0552 val_loss=1.9077 train_acc=0.260 val_acc=0.303 (best=0.303)
+  [epoch 04/10] train_loss=1.9573 val_loss=1.8682 train_acc=0.289 val_acc=0.326 (best=0.326)
+  [early] overfit_checking=True → stop (and EXCLUDE this candidate)
+[train] done: best_val_acc=0.3256 (epoch=4) | was_overfit=True
+  [OPT+PSO] evaluator overfit=True → score=-inf
+[train] start: L=6 U=544 D=0.375 act=relu/he opt=AdamW lr=2.96e-04 wd=7.11e-05 | overfit_conf=95%
+  [epoch 01/10] train_loss=2.4577 val_loss=1.9822 train_acc=0.171 val_acc=0.269 (best=0.269)
+  [epoch 02/10] train_loss=2.1203 val_loss=1.9150 train_acc=0.242 val_acc=0.295 (best=0.295)
+  [epoch 03/10] train_loss=1.9769 val_loss=1.8301 train_acc=0.285 val_acc=0.337 (best=0.337)
+  [epoch 04/10] train_loss=1.8723 val_loss=1.7626 train_acc=0.316 val_acc=0.364 (best=0.364)
+  [epoch 05/10] train_loss=1.8016 val_loss=1.7028 train_acc=0.341 val_acc=0.385 (best=0.385)
+  [early] overfit_checking=True → stop (and EXCLUDE this candidate)
+[train] done: best_val_acc=0.3846 (epoch=5) | was_overfit=True
+  [OPT+PSO] evaluator overfit=True → score=-inf
+[train] start: L=6 U=544 D=0.375 act=relu/he opt=Adam lr=1.18e-04 wd=2.87e-05 | overfit_conf=95%
+  [epoch 01/10] train_loss=2.6446 val_loss=2.2162 train_acc=0.135 val_acc=0.187 (best=0.187)
+  [epoch 02/10] train_loss=2.3279 val_loss=2.1043 train_acc=0.198 val_acc=0.234 (best=0.234)
+  [epoch 03/10] train_loss=2.1714 val_loss=2.0275 train_acc=0.230 val_acc=0.265 (best=0.265)
+  [epoch 04/10] train_loss=2.0743 val_loss=1.9833 train_acc=0.258 val_acc=0.277 (best=0.277)
+  [early] overfit_checking=True → stop (and EXCLUDE this candidate)
+[train] done: best_val_acc=0.2766 (epoch=4) | was_overfit=True
+  [OPT+PSO] evaluator overfit=True → score=-inf
+[train] start: L=6 U=544 D=0.375 act=relu/he opt=AdamW lr=1.70e-04 wd=1.45e-05 | overfit_conf=95%
+  [epoch 01/10] train_loss=2.5681 val_loss=2.1042 train_acc=0.147 val_acc=0.214 (best=0.214)
+  [epoch 02/10] train_loss=2.2356 val_loss=2.0003 train_acc=0.218 val_acc=0.270 (best=0.270)
+  [epoch 03/10] train_loss=2.0911 val_loss=1.9318 train_acc=0.250 val_acc=0.289 (best=0.289)
+  [epoch 04/10] train_loss=1.9963 val_loss=1.8945 train_acc=0.276 val_acc=0.312 (best=0.312)
+  [epoch 05/10] train_loss=1.9326 val_loss=1.8550 train_acc=0.295 val_acc=0.316 (best=0.316)
+  [epoch 06/10] train_loss=1.8972 val_loss=1.8306 train_acc=0.308 val_acc=0.331 (best=0.331)
+  [epoch 07/10] train_loss=1.8491 val_loss=1.7955 train_acc=0.327 val_acc=0.342 (best=0.342)
+  [epoch 08/10] train_loss=1.8313 val_loss=1.7773 train_acc=0.332 val_acc=0.353 (best=0.353)
+  [epoch 09/10] train_loss=1.8159 val_loss=1.7795 train_acc=0.334 val_acc=0.354 (best=0.354)
+  [epoch 10/10] train_loss=1.8011 val_loss=1.7656 train_acc=0.342 val_acc=0.358 (best=0.358)
+[train] done: best_val_acc=0.3585 (epoch=10) | was_overfit=False
+[train] start: L=6 U=544 D=0.375 act=relu/he opt=AdamW lr=8.39e-04 wd=3.70e-05 | overfit_conf=95%
+  [epoch 01/10] train_loss=2.2598 val_loss=1.8404 train_acc=0.212 val_acc=0.327 (best=0.327)
+  [epoch 02/10] train_loss=1.8802 val_loss=1.6977 train_acc=0.312 val_acc=0.378 (best=0.378)
+  [epoch 03/10] train_loss=1.7497 val_loss=1.6324 train_acc=0.364 val_acc=0.411 (best=0.411)
+  [epoch 04/10] train_loss=1.6584 val_loss=1.5448 train_acc=0.402 val_acc=0.443 (best=0.443)
+  [epoch 05/10] train_loss=1.5989 val_loss=1.5276 train_acc=0.426 val_acc=0.444 (best=0.444)
+  [epoch 06/10] train_loss=1.5474 val_loss=1.4804 train_acc=0.441 val_acc=0.470 (best=0.470)
+  [epoch 07/10] train_loss=1.5060 val_loss=1.4528 train_acc=0.461 val_acc=0.481 (best=0.481)
+  [epoch 08/10] train_loss=1.4762 val_loss=1.4380 train_acc=0.473 val_acc=0.488 (best=0.488)
+  [epoch 09/10] train_loss=1.4474 val_loss=1.4387 train_acc=0.482 val_acc=0.492 (best=0.492)
+  [early] overfit_checking=True → stop (and EXCLUDE this candidate)
+[train] done: best_val_acc=0.4924 (epoch=9) | was_overfit=True
+  [OPT+PSO] evaluator overfit=True → score=-inf
+  [PSO-OPT] iter 3/6: iter_best=0.3585 | gbest=0.4973 (opt=AdamW, lr=8.39e-04, wd=3.70e-05)
+[train] start: L=6 U=544 D=0.375 act=relu/he opt=AdamW lr=2.46e-04 wd=6.82e-05 | overfit_conf=95%
+  [epoch 01/10] train_loss=2.4900 val_loss=2.1052 train_acc=0.158 val_acc=0.228 (best=0.228)
+  [epoch 02/10] train_loss=2.1408 val_loss=2.0159 train_acc=0.235 val_acc=0.275 (best=0.275)
+  [epoch 03/10] train_loss=1.9955 val_loss=1.9082 train_acc=0.274 val_acc=0.312 (best=0.312)
+  [epoch 04/10] train_loss=1.9010 val_loss=1.8247 train_acc=0.303 val_acc=0.338 (best=0.338)
+  [epoch 05/10] train_loss=1.8368 val_loss=1.7696 train_acc=0.323 val_acc=0.367 (best=0.367)
+  [epoch 06/10] train_loss=1.7861 val_loss=1.7306 train_acc=0.348 val_acc=0.371 (best=0.371)
+  [early] overfit_checking=True → stop (and EXCLUDE this candidate)
+[train] done: best_val_acc=0.3709 (epoch=6) | was_overfit=True
+  [OPT+PSO] evaluator overfit=True → score=-inf
+[train] start: L=6 U=544 D=0.375 act=relu/he opt=AdamW lr=6.39e-04 wd=4.38e-05 | overfit_conf=95%
+  [epoch 01/10] train_loss=2.3033 val_loss=1.9339 train_acc=0.198 val_acc=0.299 (best=0.299)
+  [epoch 02/10] train_loss=1.9268 val_loss=1.7678 train_acc=0.296 val_acc=0.357 (best=0.357)
+  [epoch 03/10] train_loss=1.7944 val_loss=1.6615 train_acc=0.344 val_acc=0.391 (best=0.391)
+  [epoch 04/10] train_loss=1.6988 val_loss=1.5894 train_acc=0.384 val_acc=0.428 (best=0.428)
+  [epoch 05/10] train_loss=1.6370 val_loss=1.5726 train_acc=0.408 val_acc=0.436 (best=0.436)
+  [epoch 06/10] train_loss=1.5895 val_loss=1.5262 train_acc=0.426 val_acc=0.450 (best=0.450)
+  [early] overfit_checking=True → stop (and EXCLUDE this candidate)
+[train] done: best_val_acc=0.4497 (epoch=6) | was_overfit=True
+  [OPT+PSO] evaluator overfit=True → score=-inf
+[train] start: L=6 U=544 D=0.375 act=relu/he opt=Adam lr=2.03e-04 wd=3.08e-05 | overfit_conf=95%
+  [epoch 01/10] train_loss=2.5072 val_loss=2.1366 train_acc=0.158 val_acc=0.235 (best=0.235)
+  [epoch 02/10] train_loss=2.1816 val_loss=1.9971 train_acc=0.226 val_acc=0.293 (best=0.293)
+  [epoch 03/10] train_loss=2.0294 val_loss=1.9027 train_acc=0.265 val_acc=0.317 (best=0.317)
+  [epoch 04/10] train_loss=1.9368 val_loss=1.8353 train_acc=0.293 val_acc=0.340 (best=0.340)
+  [epoch 05/10] train_loss=1.8670 val_loss=1.7959 train_acc=0.317 val_acc=0.354 (best=0.354)
+  [epoch 06/10] train_loss=1.8220 val_loss=1.7720 train_acc=0.333 val_acc=0.361 (best=0.361)
+  [early] overfit_checking=True → stop (and EXCLUDE this candidate)
+[train] done: best_val_acc=0.3613 (epoch=6) | was_overfit=True
+  [OPT+PSO] evaluator overfit=True → score=-inf
+[train] start: L=6 U=544 D=0.375 act=relu/he opt=Adam lr=3.93e-05 wd=6.15e-06 | overfit_conf=95%
+  [epoch 01/10] train_loss=2.7397 val_loss=2.3480 train_acc=0.115 val_acc=0.116 (best=0.116)
+  [epoch 02/10] train_loss=2.5743 val_loss=2.3665 train_acc=0.144 val_acc=0.133 (best=0.133)
+  [epoch 03/10] train_loss=2.4504 val_loss=2.3534 train_acc=0.168 val_acc=0.156 (best=0.156)
+  [epoch 04/10] train_loss=2.3587 val_loss=2.3139 train_acc=0.185 val_acc=0.179 (best=0.179)
+  [epoch 05/10] train_loss=2.2942 val_loss=2.2915 train_acc=0.202 val_acc=0.190 (best=0.190)
+  [epoch 06/10] train_loss=2.2558 val_loss=2.2675 train_acc=0.208 val_acc=0.195 (best=0.195)
+  [epoch 07/10] train_loss=2.2220 val_loss=2.2400 train_acc=0.217 val_acc=0.202 (best=0.202)
+  [early] overfit_checking=True → stop (and EXCLUDE this candidate)
+[train] done: best_val_acc=0.2015 (epoch=7) | was_overfit=True
+  [OPT+PSO] evaluator overfit=True → score=-inf
+[train] start: L=6 U=544 D=0.375 act=relu/he opt=AdamW lr=8.44e-04 wd=3.69e-05 | overfit_conf=95%
+  [epoch 01/10] train_loss=2.2759 val_loss=1.8506 train_acc=0.207 val_acc=0.326 (best=0.326)
+  [epoch 02/10] train_loss=1.8935 val_loss=1.7088 train_acc=0.311 val_acc=0.377 (best=0.377)
+  [epoch 03/10] train_loss=1.7587 val_loss=1.6099 train_acc=0.361 val_acc=0.421 (best=0.421)
+  [epoch 04/10] train_loss=1.6689 val_loss=1.5629 train_acc=0.397 val_acc=0.438 (best=0.438)
+  [early] overfit_checking=True → stop (and EXCLUDE this candidate)
+[train] done: best_val_acc=0.4382 (epoch=4) | was_overfit=True
+  [OPT+PSO] evaluator overfit=True → score=-inf
+  [PSO-OPT] iter 4/6: iter_best=-inf | gbest=0.4973 (opt=AdamW, lr=8.39e-04, wd=3.70e-05)
+[train] start: L=6 U=544 D=0.375 act=relu/he opt=AdamW lr=4.31e-04 wd=5.15e-05 | overfit_conf=95%
+  [epoch 01/10] train_loss=2.3823 val_loss=1.9281 train_acc=0.184 val_acc=0.298 (best=0.298)
+  [epoch 02/10] train_loss=2.0299 val_loss=1.8132 train_acc=0.265 val_acc=0.328 (best=0.328)
+  [epoch 03/10] train_loss=1.8751 val_loss=1.7196 train_acc=0.315 val_acc=0.375 (best=0.375)
+  [epoch 04/10] train_loss=1.7826 val_loss=1.6640 train_acc=0.350 val_acc=0.395 (best=0.395)
+  [early] overfit_checking=True → stop (and EXCLUDE this candidate)
+[train] done: best_val_acc=0.3954 (epoch=4) | was_overfit=True
+  [OPT+PSO] evaluator overfit=True → score=-inf
+[train] start: L=6 U=544 D=0.375 act=relu/he opt=AdamW lr=1.41e-03 wd=2.69e-05 | overfit_conf=95%
+  [epoch 01/10] train_loss=2.1516 val_loss=1.7632 train_acc=0.244 val_acc=0.359 (best=0.359)
+  [epoch 02/10] train_loss=1.8047 val_loss=1.6330 train_acc=0.344 val_acc=0.411 (best=0.411)
+  [epoch 03/10] train_loss=1.6827 val_loss=1.5634 train_acc=0.393 val_acc=0.436 (best=0.436)
+  [epoch 04/10] train_loss=1.6062 val_loss=1.5000 train_acc=0.423 val_acc=0.465 (best=0.465)
+  [epoch 05/10] train_loss=1.5508 val_loss=1.4782 train_acc=0.446 val_acc=0.473 (best=0.473)
+  [epoch 06/10] train_loss=1.4951 val_loss=1.4296 train_acc=0.468 val_acc=0.491 (best=0.491)
+  [epoch 07/10] train_loss=1.4503 val_loss=1.3984 train_acc=0.485 val_acc=0.498 (best=0.498)
+  [epoch 08/10] train_loss=1.4037 val_loss=1.3783 train_acc=0.497 val_acc=0.513 (best=0.513)
+  [epoch 09/10] train_loss=1.3731 val_loss=1.3724 train_acc=0.510 val_acc=0.513 (best=0.513)
+  [early] overfit_checking=True → stop (and EXCLUDE this candidate)
+[train] done: best_val_acc=0.5132 (epoch=9) | was_overfit=True
+  [OPT+PSO] evaluator overfit=True → score=-inf
+[train] start: L=6 U=544 D=0.375 act=relu/he opt=Adam lr=4.17e-04 wd=3.41e-05 | overfit_conf=95%
+  [epoch 01/10] train_loss=2.3859 val_loss=1.9406 train_acc=0.185 val_acc=0.282 (best=0.282)
+  [epoch 02/10] train_loss=2.0369 val_loss=1.8330 train_acc=0.261 val_acc=0.341 (best=0.341)
+  [epoch 03/10] train_loss=1.8882 val_loss=1.7255 train_acc=0.308 val_acc=0.372 (best=0.372)
+  [epoch 04/10] train_loss=1.7837 val_loss=1.6651 train_acc=0.348 val_acc=0.399 (best=0.399)
+  [epoch 05/10] train_loss=1.7193 val_loss=1.6261 train_acc=0.373 val_acc=0.415 (best=0.415)
+  [epoch 06/10] train_loss=1.6679 val_loss=1.5748 train_acc=0.396 val_acc=0.432 (best=0.432)
+  [epoch 07/10] train_loss=1.6252 val_loss=1.5674 train_acc=0.412 val_acc=0.438 (best=0.438)
+  [early] overfit_checking=True → stop (and EXCLUDE this candidate)
+[train] done: best_val_acc=0.4375 (epoch=7) | was_overfit=True
+  [OPT+PSO] evaluator overfit=True → score=-inf
+[train] start: L=6 U=544 D=0.375 act=relu/he opt=AdamW lr=9.78e-04 wd=4.05e-05 | overfit_conf=95%
+  [epoch 01/10] train_loss=2.2266 val_loss=1.7940 train_acc=0.222 val_acc=0.343 (best=0.343)
+  [epoch 02/10] train_loss=1.8539 val_loss=1.6755 train_acc=0.321 val_acc=0.389 (best=0.389)
+  [epoch 03/10] train_loss=1.7216 val_loss=1.6057 train_acc=0.376 val_acc=0.417 (best=0.417)
+  [epoch 04/10] train_loss=1.6371 val_loss=1.5380 train_acc=0.408 val_acc=0.444 (best=0.444)
+  [epoch 05/10] train_loss=1.5741 val_loss=1.4837 train_acc=0.434 val_acc=0.465 (best=0.465)
+  [epoch 06/10] train_loss=1.5255 val_loss=1.4555 train_acc=0.453 val_acc=0.479 (best=0.479)
+  [epoch 07/10] train_loss=1.4837 val_loss=1.4317 train_acc=0.469 val_acc=0.485 (best=0.485)
+  [epoch 08/10] train_loss=1.4431 val_loss=1.4103 train_acc=0.485 val_acc=0.498 (best=0.498)
+  [epoch 09/10] train_loss=1.4212 val_loss=1.4015 train_acc=0.490 val_acc=0.501 (best=0.501)
+  [epoch 10/10] train_loss=1.4012 val_loss=1.3996 train_acc=0.496 val_acc=0.501 (best=0.501)
+[train] done: best_val_acc=0.5012 (epoch=9) | was_overfit=False
+[train] start: L=6 U=544 D=0.375 act=relu/he opt=AdamW lr=8.44e-04 wd=3.71e-05 | overfit_conf=95%
+  [epoch 01/10] train_loss=2.2673 val_loss=1.8497 train_acc=0.211 val_acc=0.327 (best=0.327)
+  [epoch 02/10] train_loss=1.8921 val_loss=1.7052 train_acc=0.309 val_acc=0.375 (best=0.375)
+  [epoch 03/10] train_loss=1.7555 val_loss=1.6072 train_acc=0.362 val_acc=0.418 (best=0.418)
+  [epoch 04/10] train_loss=1.6661 val_loss=1.5496 train_acc=0.397 val_acc=0.438 (best=0.438)
+  [epoch 05/10] train_loss=1.6033 val_loss=1.5104 train_acc=0.422 val_acc=0.460 (best=0.460)
+  [epoch 06/10] train_loss=1.5535 val_loss=1.4761 train_acc=0.442 val_acc=0.473 (best=0.473)
+  [early] overfit_checking=True → stop (and EXCLUDE this candidate)
+[train] done: best_val_acc=0.4731 (epoch=6) | was_overfit=True
+  [OPT+PSO] evaluator overfit=True → score=-inf
+  [PSO-OPT] iter 5/6: iter_best=0.5012 | gbest=0.5012 (opt=AdamW, lr=9.78e-04, wd=4.05e-05)
+[train] start: L=6 U=544 D=0.375 act=relu/he opt=AdamW lr=1.72e-03 wd=3.16e-05 | overfit_conf=95%
+  [epoch 01/10] train_loss=2.1406 val_loss=1.7675 train_acc=0.243 val_acc=0.350 (best=0.350)
+  [epoch 02/10] train_loss=1.7896 val_loss=1.6316 train_acc=0.353 val_acc=0.415 (best=0.415)
+  [epoch 03/10] train_loss=1.6746 val_loss=1.5417 train_acc=0.397 val_acc=0.446 (best=0.446)
+  [epoch 04/10] train_loss=1.5959 val_loss=1.4875 train_acc=0.428 val_acc=0.469 (best=0.469)
+  [epoch 05/10] train_loss=1.5297 val_loss=1.4460 train_acc=0.455 val_acc=0.483 (best=0.483)
+  [epoch 06/10] train_loss=1.4744 val_loss=1.4129 train_acc=0.474 val_acc=0.496 (best=0.496)
+  [early] overfit_checking=True → stop (and EXCLUDE this candidate)
+[train] done: best_val_acc=0.4957 (epoch=6) | was_overfit=True
+  [OPT+PSO] evaluator overfit=True → score=-inf
+[train] start: L=6 U=544 D=0.375 act=relu/he opt=AdamW lr=1.95e-03 wd=2.47e-05 | overfit_conf=95%
+  [epoch 01/10] train_loss=2.1347 val_loss=1.7554 train_acc=0.247 val_acc=0.355 (best=0.355)
+  [epoch 02/10] train_loss=1.7839 val_loss=1.6007 train_acc=0.352 val_acc=0.426 (best=0.426)
+  [epoch 03/10] train_loss=1.6693 val_loss=1.5461 train_acc=0.400 val_acc=0.453 (best=0.453)
+  [epoch 04/10] train_loss=1.5876 val_loss=1.4863 train_acc=0.433 val_acc=0.471 (best=0.471)
+  [epoch 05/10] train_loss=1.5195 val_loss=1.4293 train_acc=0.458 val_acc=0.492 (best=0.492)
+  [epoch 06/10] train_loss=1.4676 val_loss=1.4122 train_acc=0.477 val_acc=0.493 (best=0.493)
+  [epoch 07/10] train_loss=1.4174 val_loss=1.3761 train_acc=0.495 val_acc=0.510 (best=0.510)
+  [epoch 08/10] train_loss=1.3745 val_loss=1.3634 train_acc=0.511 val_acc=0.517 (best=0.517)
+  [epoch 09/10] train_loss=1.3398 val_loss=1.3418 train_acc=0.525 val_acc=0.520 (best=0.520)
+  [early] overfit_checking=True → stop (and EXCLUDE this candidate)
+[train] done: best_val_acc=0.5204 (epoch=9) | was_overfit=True
+  [OPT+PSO] evaluator overfit=True → score=-inf
+[train] start: L=6 U=544 D=0.375 act=relu/he opt=Adam lr=1.36e-03 wd=4.19e-05 | overfit_conf=95%
+  [epoch 01/10] train_loss=2.1705 val_loss=1.7940 train_acc=0.235 val_acc=0.354 (best=0.354)
+  [epoch 02/10] train_loss=1.8133 val_loss=1.6268 train_acc=0.340 val_acc=0.409 (best=0.409)
+  [epoch 03/10] train_loss=1.6856 val_loss=1.5523 train_acc=0.392 val_acc=0.441 (best=0.441)
+  [epoch 04/10] train_loss=1.6083 val_loss=1.4950 train_acc=0.422 val_acc=0.466 (best=0.466)
+  [epoch 05/10] train_loss=1.5475 val_loss=1.4689 train_acc=0.443 val_acc=0.477 (best=0.477)
+  [epoch 06/10] train_loss=1.4983 val_loss=1.4431 train_acc=0.467 val_acc=0.485 (best=0.485)
+  [epoch 07/10] train_loss=1.4497 val_loss=1.4079 train_acc=0.483 val_acc=0.500 (best=0.500)
+  [epoch 08/10] train_loss=1.4067 val_loss=1.3840 train_acc=0.499 val_acc=0.505 (best=0.505)
+  [epoch 09/10] train_loss=1.3693 val_loss=1.3693 train_acc=0.513 val_acc=0.517 (best=0.517)
+  [early] overfit_checking=True → stop (and EXCLUDE this candidate)
+[train] done: best_val_acc=0.5167 (epoch=9) | was_overfit=True
+  [OPT+PSO] evaluator overfit=True → score=-inf
+[train] start: L=6 U=544 D=0.375 act=relu/he opt=AdamW lr=9.28e-03 wd=1.51e-04 | overfit_conf=95%
+  [epoch 01/10] train_loss=2.0611 val_loss=1.7420 train_acc=0.275 val_acc=0.372 (best=0.372)
+  [epoch 02/10] train_loss=1.7707 val_loss=1.6234 train_acc=0.366 val_acc=0.418 (best=0.418)
+  [epoch 03/10] train_loss=1.6563 val_loss=1.5458 train_acc=0.407 val_acc=0.446 (best=0.446)
+  [epoch 04/10] train_loss=1.5717 val_loss=1.4798 train_acc=0.440 val_acc=0.475 (best=0.475)
+  [epoch 05/10] train_loss=1.5071 val_loss=1.4334 train_acc=0.465 val_acc=0.482 (best=0.482)
+  [epoch 06/10] train_loss=1.4449 val_loss=1.3951 train_acc=0.487 val_acc=0.504 (best=0.504)
+  [epoch 07/10] train_loss=1.3886 val_loss=1.3610 train_acc=0.509 val_acc=0.514 (best=0.514)
+  [early] overfit_checking=True → stop (and EXCLUDE this candidate)
+[train] done: best_val_acc=0.5138 (epoch=7) | was_overfit=True
+  [OPT+PSO] evaluator overfit=True → score=-inf
+[train] start: L=6 U=544 D=0.375 act=relu/he opt=AdamW lr=8.97e-04 wd=3.86e-05 | overfit_conf=95%
+  [epoch 01/10] train_loss=2.2481 val_loss=1.8320 train_acc=0.216 val_acc=0.336 (best=0.336)
+  [epoch 02/10] train_loss=1.8741 val_loss=1.6823 train_acc=0.319 val_acc=0.387 (best=0.387)
+  [epoch 03/10] train_loss=1.7375 val_loss=1.5925 train_acc=0.373 val_acc=0.421 (best=0.421)
+  [epoch 04/10] train_loss=1.6498 val_loss=1.5371 train_acc=0.405 val_acc=0.445 (best=0.445)
+  [epoch 05/10] train_loss=1.5862 val_loss=1.5078 train_acc=0.428 val_acc=0.459 (best=0.459)
+  [epoch 06/10] train_loss=1.5424 val_loss=1.4764 train_acc=0.445 val_acc=0.473 (best=0.473)
+  [epoch 07/10] train_loss=1.4975 val_loss=1.4439 train_acc=0.462 val_acc=0.488 (best=0.488)
+  [epoch 08/10] train_loss=1.4579 val_loss=1.4277 train_acc=0.477 val_acc=0.491 (best=0.491)
+  [early] overfit_checking=True → stop (and EXCLUDE this candidate)
+[train] done: best_val_acc=0.4908 (epoch=8) | was_overfit=True
+  [OPT+PSO] evaluator overfit=True → score=-inf
+  [PSO-OPT] iter 6/6: iter_best=-inf | gbest=0.5012 (opt=AdamW, lr=9.78e-04, wd=4.05e-05)
+[PSO-OPT] done: gbest=0.5012 (opt=AdamW, lr=9.78e-04, wd=4.05e-05) | time=667.04s
+[train] start: L=6 U=544 D=0.375 act=relu/he opt=AdamW lr=9.78e-04 wd=4.05e-05 | overfit_conf=95%
+  [epoch 01/10] train_loss=2.2286 val_loss=1.8212 train_acc=0.221 val_acc=0.339 (best=0.339)
+  [epoch 02/10] train_loss=1.8539 val_loss=1.6705 train_acc=0.325 val_acc=0.398 (best=0.398)
+  [epoch 03/10] train_loss=1.7270 val_loss=1.5908 train_acc=0.374 val_acc=0.428 (best=0.428)
+  [epoch 04/10] train_loss=1.6421 val_loss=1.5393 train_acc=0.406 val_acc=0.445 (best=0.445)
+  [epoch 05/10] train_loss=1.5789 val_loss=1.4937 train_acc=0.431 val_acc=0.463 (best=0.463)
+  [epoch 06/10] train_loss=1.5280 val_loss=1.4658 train_acc=0.449 val_acc=0.477 (best=0.477)
+  [epoch 07/10] train_loss=1.4870 val_loss=1.4389 train_acc=0.469 val_acc=0.487 (best=0.487)
+  [epoch 08/10] train_loss=1.4475 val_loss=1.4109 train_acc=0.484 val_acc=0.499 (best=0.499)
+  [early] overfit_checking=True → stop (and EXCLUDE this candidate)
+[train] done: best_val_acc=0.4987 (epoch=8) | was_overfit=True
+[OPT+PSO] final overfit=True → val=-inf
+
+================================================================================
+【STAGE 3】 (Base) PSO(optim+lr+wd) 결과 - 선택 조합
+================================================================================
+【SELECTED HYPERPARAMETERS】
+               act : relu
+           dropout : 0.375
+            layers : 6
+                lr : 0.0009783149056515428
+             optim : AdamW
+             units : 544
+            w_init : he
+      weight_decay : 4.048459622068904e-05
+================================================================================
+[SNAPSHOT] Base-2 after PSO: {'layers': 6, 'units': 544, 'dropout': 0.375, 'act': 'relu', 'w_init': 'he', 'optim': 'AdamW', 'lr': 0.0009783149056515428, 'weight_decay': 4.048459622068904e-05}
+[Stage] Base-2 result: overfit → excluded
+================================================================================
+
+========================================================================
+【STAGE 2/3】 Base-3 정밀화 시작
+========================================================================
+
+[AI] Exhaustive (activation/init) for base: L=7 U=640 D=0.500
+[train] start: L=7 U=640 D=0.500 act=relu/he opt=Adam lr=1.00e-03 wd=1.00e-04 | overfit_conf=95%
+  [epoch 01/10] train_loss=2.4933 val_loss=2.1305 train_acc=0.146 val_acc=0.198 (best=0.198)
+  [epoch 02/10] train_loss=2.0486 val_loss=1.9233 train_acc=0.226 val_acc=0.276 (best=0.276)
+  [epoch 03/10] train_loss=1.9370 val_loss=1.8771 train_acc=0.265 val_acc=0.296 (best=0.296)
+  [epoch 04/10] train_loss=1.8590 val_loss=1.7839 train_acc=0.307 val_acc=0.339 (best=0.339)
+  [early] overfit_checking=True → stop (and EXCLUDE this candidate)
+[train] done: best_val_acc=0.3386 (epoch=4) | was_overfit=True
+  [AI] act=     relu / init=he     → overfit=True (excluded)
+[train] start: L=7 U=640 D=0.500 act=leakyrelu/he opt=Adam lr=1.00e-03 wd=1.00e-04 | overfit_conf=95%
+  [epoch 01/10] train_loss=2.5100 val_loss=2.1133 train_acc=0.151 val_acc=0.192 (best=0.192)
+  [epoch 02/10] train_loss=2.0662 val_loss=1.9362 train_acc=0.226 val_acc=0.260 (best=0.260)
+  [epoch 03/10] train_loss=1.9297 val_loss=1.8379 train_acc=0.275 val_acc=0.306 (best=0.306)
+  [epoch 04/10] train_loss=1.8499 val_loss=1.7587 train_acc=0.316 val_acc=0.357 (best=0.357)
+  [epoch 05/10] train_loss=1.7789 val_loss=1.7046 train_acc=0.346 val_acc=0.373 (best=0.373)
+  [epoch 06/10] train_loss=1.7213 val_loss=1.6263 train_acc=0.372 val_acc=0.405 (best=0.405)
+  [epoch 07/10] train_loss=1.6712 val_loss=1.5962 train_acc=0.392 val_acc=0.426 (best=0.426)
+  [epoch 08/10] train_loss=1.6364 val_loss=1.5764 train_acc=0.406 val_acc=0.428 (best=0.428)
+  [epoch 09/10] train_loss=1.6061 val_loss=1.5681 train_acc=0.417 val_acc=0.432 (best=0.432)
+  [early] overfit_checking=True → stop (and EXCLUDE this candidate)
+[train] done: best_val_acc=0.4320 (epoch=9) | was_overfit=True
+  [AI] act=leakyrelu / init=he     → overfit=True (excluded)
+[train] start: L=7 U=640 D=0.500 act=sigmoid/xavier opt=Adam lr=1.00e-03 wd=1.00e-04 | overfit_conf=95%
+  [epoch 01/10] train_loss=2.4058 val_loss=2.0582 train_acc=0.141 val_acc=0.182 (best=0.182)
+  [epoch 02/10] train_loss=2.2101 val_loss=2.0419 train_acc=0.162 val_acc=0.181 (best=0.182)
+  [epoch 03/10] train_loss=2.1521 val_loss=2.0383 train_acc=0.166 val_acc=0.190 (best=0.190)
+  [epoch 04/10] train_loss=2.1014 val_loss=1.9424 train_acc=0.189 val_acc=0.247 (best=0.247)
+  [epoch 05/10] train_loss=2.0506 val_loss=1.9315 train_acc=0.218 val_acc=0.253 (best=0.253)
+  [epoch 06/10] train_loss=2.0333 val_loss=1.9303 train_acc=0.224 val_acc=0.254 (best=0.254)
+  [epoch 07/10] train_loss=2.0265 val_loss=1.9283 train_acc=0.222 val_acc=0.250 (best=0.254)
+  [epoch 08/10] train_loss=2.0108 val_loss=1.9260 train_acc=0.231 val_acc=0.252 (best=0.254)
+  [epoch 09/10] train_loss=2.0094 val_loss=1.9221 train_acc=0.231 val_acc=0.259 (best=0.259)
+  [epoch 10/10] train_loss=2.0063 val_loss=1.9196 train_acc=0.233 val_acc=0.258 (best=0.259)
+[train] done: best_val_acc=0.2588 (epoch=9) | was_overfit=False
+  [AI] act=  sigmoid / init=xavier → val=0.2588
+[train] start: L=7 U=640 D=0.500 act=tanh/xavier opt=Adam lr=1.00e-03 wd=1.00e-04 | overfit_conf=95%
+  [epoch 01/10] train_loss=2.3488 val_loss=2.0110 train_acc=0.207 val_acc=0.300 (best=0.300)
+  [epoch 02/10] train_loss=2.0229 val_loss=1.8536 train_acc=0.277 val_acc=0.358 (best=0.358)
+  [epoch 03/10] train_loss=1.8998 val_loss=1.8031 train_acc=0.323 val_acc=0.369 (best=0.369)
+  [epoch 04/10] train_loss=1.8427 val_loss=1.7436 train_acc=0.345 val_acc=0.391 (best=0.391)
+  [epoch 05/10] train_loss=1.7923 val_loss=1.7412 train_acc=0.367 val_acc=0.393 (best=0.393)
+  [early] overfit_checking=True → stop (and EXCLUDE this candidate)
+[train] done: best_val_acc=0.3930 (epoch=5) | was_overfit=True
+  [AI] act=     tanh / init=xavier → overfit=True (excluded)
+[AI] best: act=sigmoid/xavier → val=0.2588 | time=90.38s
+
+================================================================================
+【STAGE 2】 (Base) 활성화·초기화 전수 결과 - 선택 조합
+================================================================================
+【SELECTED HYPERPARAMETERS】
+               act : sigmoid
+           dropout : 0.5
+            layers : 7
+                lr : 0.001
+             optim : Adam
+             units : 640
+            w_init : xavier
+      weight_decay : 0.0001
+================================================================================
+[SNAPSHOT] Base-3 after AI: {'layers': 7, 'units': 640, 'dropout': 0.5, 'act': 'sigmoid', 'w_init': 'xavier', 'optim': 'Adam', 'lr': 0.001, 'weight_decay': 0.0001}
+[PSO-OPT] start base (L=7 U=640 D=0.500 act=sigmoid/xavier)
+[train] start: L=7 U=640 D=0.500 act=sigmoid/xavier opt=Adam lr=6.11e-03 wd=1.39e-05 | overfit_conf=95%
+  [epoch 01/10] train_loss=2.2546 val_loss=2.0283 train_acc=0.189 val_acc=0.198 (best=0.198)
+  [epoch 02/10] train_loss=2.0814 val_loss=1.9696 train_acc=0.216 val_acc=0.238 (best=0.238)
+  [epoch 03/10] train_loss=2.0663 val_loss=1.9715 train_acc=0.220 val_acc=0.238 (best=0.238)
+  [epoch 04/10] train_loss=2.0444 val_loss=1.9422 train_acc=0.225 val_acc=0.237 (best=0.238)
+  [epoch 05/10] train_loss=2.0126 val_loss=1.9650 train_acc=0.233 val_acc=0.245 (best=0.245)
+  [epoch 06/10] train_loss=1.9915 val_loss=1.8936 train_acc=0.238 val_acc=0.278 (best=0.278)
+  [epoch 07/10] train_loss=1.9609 val_loss=1.8900 train_acc=0.246 val_acc=0.275 (best=0.278)
+  [epoch 08/10] train_loss=1.9394 val_loss=1.8689 train_acc=0.253 val_acc=0.272 (best=0.278)
+  [epoch 09/10] train_loss=1.9137 val_loss=1.8499 train_acc=0.263 val_acc=0.280 (best=0.280)
+  [epoch 10/10] train_loss=1.9058 val_loss=1.8391 train_acc=0.266 val_acc=0.291 (best=0.291)
+[train] done: best_val_acc=0.2906 (epoch=10) | was_overfit=False
+[train] start: L=7 U=640 D=0.500 act=sigmoid/xavier opt=AdamW lr=8.08e-05 wd=1.60e-04 | overfit_conf=95%
+  [epoch 01/10] train_loss=2.6006 val_loss=2.2925 train_acc=0.101 val_acc=0.140 (best=0.140)
+  [epoch 02/10] train_loss=2.5515 val_loss=2.2477 train_acc=0.100 val_acc=0.165 (best=0.165)
+  [epoch 03/10] train_loss=2.4841 val_loss=2.0795 train_acc=0.116 val_acc=0.189 (best=0.189)
+  [epoch 04/10] train_loss=2.3477 val_loss=2.0462 train_acc=0.149 val_acc=0.191 (best=0.191)
+  [epoch 05/10] train_loss=2.2947 val_loss=2.0479 train_acc=0.156 val_acc=0.190 (best=0.191)
+  [early] overfit_checking=True → stop (and EXCLUDE this candidate)
+[train] done: best_val_acc=0.1912 (epoch=4) | was_overfit=True
+  [OPT+PSO] evaluator overfit=True → score=-inf
+[train] start: L=7 U=640 D=0.500 act=sigmoid/xavier opt=Adam lr=7.55e-03 wd=4.93e-05 | overfit_conf=95%
+  [epoch 01/10] train_loss=2.2600 val_loss=2.0213 train_acc=0.190 val_acc=0.207 (best=0.207)
+  [epoch 02/10] train_loss=2.1254 val_loss=2.0165 train_acc=0.206 val_acc=0.201 (best=0.207)
+  [epoch 03/10] train_loss=2.0970 val_loss=1.9860 train_acc=0.206 val_acc=0.224 (best=0.224)
+  [epoch 04/10] train_loss=2.0849 val_loss=1.9519 train_acc=0.210 val_acc=0.248 (best=0.248)
+  [early] overfit_checking=True → stop (and EXCLUDE this candidate)
+[train] done: best_val_acc=0.2478 (epoch=4) | was_overfit=True
+  [OPT+PSO] evaluator overfit=True → score=-inf
+[train] start: L=7 U=640 D=0.500 act=sigmoid/xavier opt=AdamW lr=8.38e-02 wd=5.49e-04 | overfit_conf=95%
+  [epoch 01/10] train_loss=5.0442 val_loss=1.9512 train_acc=0.163 val_acc=0.254 (best=0.254)
+  [epoch 02/10] train_loss=2.0039 val_loss=1.8975 train_acc=0.227 val_acc=0.256 (best=0.256)
+  [epoch 03/10] train_loss=1.9483 val_loss=1.8704 train_acc=0.245 val_acc=0.255 (best=0.256)
+  [epoch 04/10] train_loss=1.9028 val_loss=1.8081 train_acc=0.263 val_acc=0.290 (best=0.290)
+  [epoch 05/10] train_loss=1.8465 val_loss=1.7647 train_acc=0.287 val_acc=0.326 (best=0.326)
+  [epoch 06/10] train_loss=1.7978 val_loss=1.7351 train_acc=0.305 val_acc=0.318 (best=0.326)
+  [epoch 07/10] train_loss=1.7478 val_loss=1.6861 train_acc=0.326 val_acc=0.363 (best=0.363)
+  [epoch 08/10] train_loss=1.7050 val_loss=1.6526 train_acc=0.351 val_acc=0.375 (best=0.375)
+  [epoch 09/10] train_loss=1.6707 val_loss=1.6242 train_acc=0.364 val_acc=0.394 (best=0.394)
+  [epoch 10/10] train_loss=1.6458 val_loss=1.6160 train_acc=0.374 val_acc=0.395 (best=0.395)
+[train] done: best_val_acc=0.3953 (epoch=10) | was_overfit=False
+[train] start: L=7 U=640 D=0.500 act=sigmoid/xavier opt=AdamW lr=8.39e-04 wd=3.70e-05 | overfit_conf=95%
+  [epoch 01/10] train_loss=2.3949 val_loss=2.0827 train_acc=0.140 val_acc=0.188 (best=0.188)
+  [epoch 02/10] train_loss=2.2040 val_loss=2.0551 train_acc=0.165 val_acc=0.192 (best=0.192)
+  [epoch 03/10] train_loss=2.1511 val_loss=2.0432 train_acc=0.164 val_acc=0.184 (best=0.192)
+  [epoch 04/10] train_loss=2.1163 val_loss=2.0447 train_acc=0.170 val_acc=0.181 (best=0.192)
+  [epoch 05/10] train_loss=2.0989 val_loss=2.0331 train_acc=0.174 val_acc=0.193 (best=0.193)
+  [epoch 06/10] train_loss=2.0835 val_loss=2.0331 train_acc=0.175 val_acc=0.179 (best=0.193)
+  [epoch 07/10] train_loss=2.0734 val_loss=2.0295 train_acc=0.174 val_acc=0.195 (best=0.195)
+  [epoch 08/10] train_loss=2.0670 val_loss=2.0291 train_acc=0.178 val_acc=0.194 (best=0.195)
+  [epoch 09/10] train_loss=2.0657 val_loss=2.0273 train_acc=0.178 val_acc=0.195 (best=0.195)
+  [epoch 10/10] train_loss=2.0619 val_loss=2.0262 train_acc=0.181 val_acc=0.191 (best=0.195)
+[train] done: best_val_acc=0.1950 (epoch=9) | was_overfit=False
+  [PSO-OPT] iter 1/6: iter_best=0.3953 | gbest=0.3953 (opt=AdamW, lr=8.38e-02, wd=5.49e-04)
+[train] start: L=7 U=640 D=0.500 act=sigmoid/xavier opt=AdamW lr=8.84e-02 wd=5.92e-04 | overfit_conf=95%
+  [epoch 01/10] train_loss=5.1206 val_loss=1.9456 train_acc=0.183 val_acc=0.245 (best=0.245)
+  [epoch 02/10] train_loss=1.9797 val_loss=1.9060 train_acc=0.243 val_acc=0.262 (best=0.262)
+  [epoch 03/10] train_loss=1.9321 val_loss=1.8517 train_acc=0.252 val_acc=0.281 (best=0.281)
+  [epoch 04/10] train_loss=1.8762 val_loss=1.7911 train_acc=0.274 val_acc=0.289 (best=0.289)
+  [epoch 05/10] train_loss=1.8108 val_loss=1.7263 train_acc=0.295 val_acc=0.336 (best=0.336)
+  [epoch 06/10] train_loss=1.7631 val_loss=1.6962 train_acc=0.320 val_acc=0.356 (best=0.356)
+  [epoch 07/10] train_loss=1.7163 val_loss=1.6599 train_acc=0.343 val_acc=0.373 (best=0.373)
+  [epoch 08/10] train_loss=1.6733 val_loss=1.6257 train_acc=0.362 val_acc=0.382 (best=0.382)
+  [early] overfit_checking=True → stop (and EXCLUDE this candidate)
+[train] done: best_val_acc=0.3821 (epoch=8) | was_overfit=True
+  [OPT+PSO] evaluator overfit=True → score=-inf
+[train] start: L=7 U=640 D=0.500 act=sigmoid/xavier opt=AdamW lr=4.76e-04 wd=2.20e-04 | overfit_conf=95%
+  [epoch 01/10] train_loss=2.4843 val_loss=2.0733 train_acc=0.120 val_acc=0.196 (best=0.196)
+  [epoch 02/10] train_loss=2.2187 val_loss=1.9681 train_acc=0.179 val_acc=0.259 (best=0.259)
+  [epoch 03/10] train_loss=2.1191 val_loss=1.9627 train_acc=0.212 val_acc=0.245 (best=0.259)
+  [epoch 04/10] train_loss=2.0774 val_loss=1.9380 train_acc=0.219 val_acc=0.260 (best=0.260)
+  [early] overfit_checking=True → stop (and EXCLUDE this candidate)
+[train] done: best_val_acc=0.2598 (epoch=4) | was_overfit=True
+  [OPT+PSO] evaluator overfit=True → score=-inf
+[train] start: L=7 U=640 D=0.500 act=sigmoid/xavier opt=Adam lr=1.00e-01 wd=8.66e-04 | overfit_conf=95%
+  [epoch 01/10] train_loss=6.5443 val_loss=2.3452 train_acc=0.099 val_acc=0.102 (best=0.102)
+  [epoch 02/10] train_loss=2.7166 val_loss=2.4759 train_acc=0.098 val_acc=0.106 (best=0.106)
+  [epoch 03/10] train_loss=2.8999 val_loss=2.5080 train_acc=0.099 val_acc=0.101 (best=0.106)
+  [epoch 04/10] train_loss=2.7206 val_loss=2.5613 train_acc=0.099 val_acc=0.099 (best=0.106)
+  [early] overfit_checking=True → stop (and EXCLUDE this candidate)
+[train] done: best_val_acc=0.1061 (epoch=2) | was_overfit=True
+  [OPT+PSO] evaluator overfit=True → score=-inf
+[train] start: L=7 U=640 D=0.500 act=sigmoid/xavier opt=AdamW lr=8.38e-02 wd=5.49e-04 | overfit_conf=95%
+  [epoch 01/10] train_loss=4.7426 val_loss=1.9925 train_acc=0.161 val_acc=0.236 (best=0.236)
+  [epoch 02/10] train_loss=1.9945 val_loss=1.8804 train_acc=0.236 val_acc=0.276 (best=0.276)
+  [epoch 03/10] train_loss=1.9332 val_loss=1.8242 train_acc=0.252 val_acc=0.278 (best=0.278)
+  [epoch 04/10] train_loss=1.8652 val_loss=1.7821 train_acc=0.280 val_acc=0.299 (best=0.299)
+  [early] overfit_checking=True → stop (and EXCLUDE this candidate)
+[train] done: best_val_acc=0.2993 (epoch=4) | was_overfit=True
+  [OPT+PSO] evaluator overfit=True → score=-inf
+[train] start: L=7 U=640 D=0.500 act=sigmoid/xavier opt=AdamW lr=1.37e-02 wd=1.90e-04 | overfit_conf=95%
+  [epoch 01/10] train_loss=2.3299 val_loss=2.1612 train_acc=0.194 val_acc=0.227 (best=0.227)
+  [epoch 02/10] train_loss=2.0932 val_loss=1.9561 train_acc=0.221 val_acc=0.259 (best=0.259)
+  [epoch 03/10] train_loss=2.0380 val_loss=1.9125 train_acc=0.227 val_acc=0.258 (best=0.259)
+  [epoch 04/10] train_loss=1.9732 val_loss=1.8615 train_acc=0.246 val_acc=0.270 (best=0.270)
+  [epoch 05/10] train_loss=1.9231 val_loss=1.8347 train_acc=0.259 val_acc=0.289 (best=0.289)
+  [early] overfit_checking=True → stop (and EXCLUDE this candidate)
+[train] done: best_val_acc=0.2890 (epoch=5) | was_overfit=True
+  [OPT+PSO] evaluator overfit=True → score=-inf
+  [PSO-OPT] iter 2/6: iter_best=-inf | gbest=0.3953 (opt=AdamW, lr=8.38e-02, wd=5.49e-04)
+[train] start: L=7 U=640 D=0.500 act=sigmoid/xavier opt=AdamW lr=1.00e-01 wd=1.52e-03 | overfit_conf=95%
+  [epoch 01/10] train_loss=6.5462 val_loss=2.0579 train_acc=0.150 val_acc=0.180 (best=0.180)
+  [epoch 02/10] train_loss=2.0820 val_loss=2.0086 train_acc=0.175 val_acc=0.188 (best=0.188)
+  [epoch 03/10] train_loss=2.0364 val_loss=1.9920 train_acc=0.180 val_acc=0.186 (best=0.188)
+  [epoch 04/10] train_loss=2.0115 val_loss=1.9597 train_acc=0.189 val_acc=0.201 (best=0.201)
+  [epoch 05/10] train_loss=1.9547 val_loss=1.8519 train_acc=0.225 val_acc=0.271 (best=0.271)
+  [epoch 06/10] train_loss=1.8789 val_loss=1.8080 train_acc=0.269 val_acc=0.290 (best=0.290)
+  [epoch 07/10] train_loss=1.8290 val_loss=1.7589 train_acc=0.288 val_acc=0.332 (best=0.332)
+  [epoch 08/10] train_loss=1.7912 val_loss=1.7239 train_acc=0.307 val_acc=0.326 (best=0.332)
+  [epoch 09/10] train_loss=1.7583 val_loss=1.7034 train_acc=0.327 val_acc=0.356 (best=0.356)
+  [epoch 10/10] train_loss=1.7333 val_loss=1.6952 train_acc=0.336 val_acc=0.355 (best=0.356)
+[train] done: best_val_acc=0.3560 (epoch=9) | was_overfit=False
+[train] start: L=7 U=640 D=0.500 act=sigmoid/xavier opt=AdamW lr=3.81e-03 wd=3.17e-04 | overfit_conf=95%
+  [epoch 01/10] train_loss=2.2520 val_loss=2.0296 train_acc=0.184 val_acc=0.236 (best=0.236)
+  [epoch 02/10] train_loss=2.0621 val_loss=1.9529 train_acc=0.222 val_acc=0.254 (best=0.254)
+  [epoch 03/10] train_loss=2.0209 val_loss=1.9600 train_acc=0.231 val_acc=0.248 (best=0.254)
+  [epoch 04/10] train_loss=2.0071 val_loss=1.9676 train_acc=0.238 val_acc=0.244 (best=0.254)
+  [early] overfit_checking=True → stop (and EXCLUDE this candidate)
+[train] done: best_val_acc=0.2544 (epoch=2) | was_overfit=True
+  [OPT+PSO] evaluator overfit=True → score=-inf
+[train] start: L=7 U=640 D=0.500 act=sigmoid/xavier opt=Adam lr=1.00e-01 wd=4.73e-03 | overfit_conf=95%
+  [epoch 01/10] train_loss=8.0564 val_loss=2.8547 train_acc=0.101 val_acc=0.102 (best=0.102)
+  [epoch 02/10] train_loss=5.8876 val_loss=3.4186 train_acc=0.100 val_acc=0.099 (best=0.102)
+  [epoch 03/10] train_loss=5.2038 val_loss=3.3631 train_acc=0.100 val_acc=0.102 (best=0.102)
+  [epoch 04/10] train_loss=4.1602 val_loss=4.4181 train_acc=0.099 val_acc=0.097 (best=0.102)
+  [early] overfit_checking=True → stop (and EXCLUDE this candidate)
+  [early] patience reached → stop
+[train] done: best_val_acc=0.1025 (epoch=1) | was_overfit=True
+  [OPT+PSO] evaluator overfit=True → score=-inf
+[train] start: L=7 U=640 D=0.500 act=sigmoid/xavier opt=AdamW lr=8.38e-02 wd=5.49e-04 | overfit_conf=95%
+  [epoch 01/10] train_loss=5.5235 val_loss=2.0475 train_acc=0.143 val_acc=0.222 (best=0.222)
+  [epoch 02/10] train_loss=2.0524 val_loss=1.9207 train_acc=0.214 val_acc=0.257 (best=0.257)
+  [epoch 03/10] train_loss=1.9648 val_loss=1.8832 train_acc=0.241 val_acc=0.265 (best=0.265)
+  [epoch 04/10] train_loss=1.9164 val_loss=1.8163 train_acc=0.256 val_acc=0.295 (best=0.295)
+  [epoch 05/10] train_loss=1.8602 val_loss=1.7958 train_acc=0.283 val_acc=0.297 (best=0.297)
+  [epoch 06/10] train_loss=1.8113 val_loss=1.7295 train_acc=0.300 val_acc=0.334 (best=0.334)
+  [epoch 07/10] train_loss=1.7629 val_loss=1.6779 train_acc=0.323 val_acc=0.373 (best=0.373)
+  [epoch 08/10] train_loss=1.7180 val_loss=1.6413 train_acc=0.349 val_acc=0.388 (best=0.388)
+  [epoch 09/10] train_loss=1.6815 val_loss=1.6292 train_acc=0.363 val_acc=0.392 (best=0.392)
+  [epoch 10/10] train_loss=1.6590 val_loss=1.6216 train_acc=0.373 val_acc=0.392 (best=0.392)
+[train] done: best_val_acc=0.3921 (epoch=9) | was_overfit=False
+[train] start: L=7 U=640 D=0.500 act=sigmoid/xavier opt=AdamW lr=8.49e-02 wd=5.53e-04 | overfit_conf=95%
+  [epoch 01/10] train_loss=5.5507 val_loss=2.1170 train_acc=0.139 val_acc=0.196 (best=0.196)
+  [epoch 02/10] train_loss=2.1113 val_loss=2.0284 train_acc=0.178 val_acc=0.189 (best=0.196)
+  [epoch 03/10] train_loss=1.9950 val_loss=1.9084 train_acc=0.229 val_acc=0.236 (best=0.236)
+  [epoch 04/10] train_loss=1.9385 val_loss=1.8609 train_acc=0.248 val_acc=0.254 (best=0.254)
+  [epoch 05/10] train_loss=1.8862 val_loss=1.7981 train_acc=0.265 val_acc=0.303 (best=0.303)
+  [epoch 06/10] train_loss=1.8411 val_loss=1.7729 train_acc=0.283 val_acc=0.309 (best=0.309)
+  [early] overfit_checking=True → stop (and EXCLUDE this candidate)
+[train] done: best_val_acc=0.3089 (epoch=6) | was_overfit=True
+  [OPT+PSO] evaluator overfit=True → score=-inf
+  [PSO-OPT] iter 3/6: iter_best=0.3921 | gbest=0.3953 (opt=AdamW, lr=8.38e-02, wd=5.49e-04)
+[train] start: L=7 U=640 D=0.500 act=sigmoid/xavier opt=AdamW lr=1.00e-01 wd=1.28e-03 | overfit_conf=95%
+  [epoch 01/10] train_loss=5.6083 val_loss=2.0415 train_acc=0.146 val_acc=0.177 (best=0.177)
+  [epoch 02/10] train_loss=2.0417 val_loss=1.9211 train_acc=0.206 val_acc=0.257 (best=0.257)
+  [epoch 03/10] train_loss=1.9563 val_loss=1.8744 train_acc=0.237 val_acc=0.265 (best=0.265)
+  [epoch 04/10] train_loss=1.9088 val_loss=1.8346 train_acc=0.257 val_acc=0.280 (best=0.280)
+  [epoch 05/10] train_loss=1.8638 val_loss=1.7792 train_acc=0.276 val_acc=0.303 (best=0.303)
+  [epoch 06/10] train_loss=1.8113 val_loss=1.7313 train_acc=0.300 val_acc=0.334 (best=0.334)
+  [epoch 07/10] train_loss=1.7695 val_loss=1.6905 train_acc=0.320 val_acc=0.346 (best=0.346)
+  [epoch 08/10] train_loss=1.7210 val_loss=1.6533 train_acc=0.345 val_acc=0.378 (best=0.378)
+  [epoch 09/10] train_loss=1.6809 val_loss=1.6292 train_acc=0.360 val_acc=0.378 (best=0.378)
+  [epoch 10/10] train_loss=1.6575 val_loss=1.6155 train_acc=0.373 val_acc=0.395 (best=0.395)
+[train] done: best_val_acc=0.3953 (epoch=10) | was_overfit=False
+[train] start: L=7 U=640 D=0.500 act=sigmoid/xavier opt=AdamW lr=3.77e-02 wd=4.77e-04 | overfit_conf=95%
+  [epoch 01/10] train_loss=2.9769 val_loss=2.1028 train_acc=0.191 val_acc=0.232 (best=0.232)
+  [epoch 02/10] train_loss=2.0532 val_loss=1.8876 train_acc=0.225 val_acc=0.276 (best=0.276)
+  [epoch 03/10] train_loss=1.9401 val_loss=1.8138 train_acc=0.275 val_acc=0.325 (best=0.325)
+  [epoch 04/10] train_loss=1.8436 val_loss=1.7169 train_acc=0.310 val_acc=0.365 (best=0.365)
+  [epoch 05/10] train_loss=1.7686 val_loss=1.6693 train_acc=0.342 val_acc=0.369 (best=0.369)
+  [early] overfit_checking=True → stop (and EXCLUDE this candidate)
+[train] done: best_val_acc=0.3695 (epoch=5) | was_overfit=True
+  [OPT+PSO] evaluator overfit=True → score=-inf
+[train] start: L=7 U=640 D=0.500 act=sigmoid/xavier opt=Adam lr=1.00e-01 wd=2.59e-03 | overfit_conf=95%
+  [epoch 01/10] train_loss=6.6919 val_loss=2.8059 train_acc=0.098 val_acc=0.097 (best=0.097)
+  [epoch 02/10] train_loss=3.9688 val_loss=13.7683 train_acc=0.098 val_acc=0.097 (best=0.097)
+  [epoch 03/10] train_loss=4.0521 val_loss=2.6728 train_acc=0.101 val_acc=0.101 (best=0.101)
+  [epoch 04/10] train_loss=4.2718 val_loss=2.3969 train_acc=0.100 val_acc=0.097 (best=0.101)
+  [early] overfit_checking=True → stop (and EXCLUDE this candidate)
+[train] done: best_val_acc=0.1005 (epoch=3) | was_overfit=True
+  [OPT+PSO] evaluator overfit=True → score=-inf
+[train] start: L=7 U=640 D=0.500 act=sigmoid/xavier opt=Adam lr=8.40e-02 wd=5.48e-04 | overfit_conf=95%
+  [epoch 01/10] train_loss=6.0224 val_loss=2.3299 train_acc=0.099 val_acc=0.106 (best=0.106)
+  [epoch 02/10] train_loss=2.4592 val_loss=2.4218 train_acc=0.096 val_acc=0.097 (best=0.106)
+  [epoch 03/10] train_loss=2.6127 val_loss=2.8036 train_acc=0.101 val_acc=0.102 (best=0.106)
+  [epoch 04/10] train_loss=2.5881 val_loss=2.5640 train_acc=0.100 val_acc=0.101 (best=0.106)
+  [early] patience reached → stop
+[train] done: best_val_acc=0.1061 (epoch=1) | was_overfit=False
+[train] start: L=7 U=640 D=0.500 act=sigmoid/xavier opt=AdamW lr=4.23e-02 wd=3.65e-04 | overfit_conf=95%
+  [epoch 01/10] train_loss=3.3974 val_loss=2.0483 train_acc=0.183 val_acc=0.245 (best=0.245)
+  [epoch 02/10] train_loss=2.0481 val_loss=1.9381 train_acc=0.228 val_acc=0.233 (best=0.245)
+  [epoch 03/10] train_loss=1.9629 val_loss=1.8719 train_acc=0.250 val_acc=0.270 (best=0.270)
+  [epoch 04/10] train_loss=1.8659 val_loss=1.7479 train_acc=0.290 val_acc=0.319 (best=0.319)
+  [epoch 05/10] train_loss=1.7913 val_loss=1.6738 train_acc=0.327 val_acc=0.371 (best=0.371)
+  [epoch 06/10] train_loss=1.7187 val_loss=1.6298 train_acc=0.356 val_acc=0.393 (best=0.393)
+  [epoch 07/10] train_loss=1.6713 val_loss=1.5824 train_acc=0.378 val_acc=0.411 (best=0.411)
+  [epoch 08/10] train_loss=1.6195 val_loss=1.5467 train_acc=0.400 val_acc=0.436 (best=0.436)
+  [epoch 09/10] train_loss=1.5864 val_loss=1.5308 train_acc=0.413 val_acc=0.444 (best=0.444)
+  [epoch 10/10] train_loss=1.5730 val_loss=1.5223 train_acc=0.422 val_acc=0.447 (best=0.447)
+[train] done: best_val_acc=0.4473 (epoch=10) | was_overfit=False
+  [PSO-OPT] iter 4/6: iter_best=0.4473 | gbest=0.4473 (opt=AdamW, lr=4.23e-02, wd=3.65e-04)
+[train] start: L=7 U=640 D=0.500 act=sigmoid/xavier opt=AdamW lr=9.43e-02 wd=7.44e-04 | overfit_conf=95%
+  [epoch 01/10] train_loss=5.7801 val_loss=2.0514 train_acc=0.151 val_acc=0.194 (best=0.194)
+  [epoch 02/10] train_loss=2.0816 val_loss=2.0220 train_acc=0.174 val_acc=0.193 (best=0.194)
+  [epoch 03/10] train_loss=2.0445 val_loss=1.9882 train_acc=0.178 val_acc=0.192 (best=0.194)
+  [epoch 04/10] train_loss=2.0114 val_loss=1.9502 train_acc=0.186 val_acc=0.202 (best=0.202)
+  [early] overfit_checking=True → stop (and EXCLUDE this candidate)
+[train] done: best_val_acc=0.2023 (epoch=4) | was_overfit=True
+  [OPT+PSO] evaluator overfit=True → score=-inf
+[train] start: L=7 U=640 D=0.500 act=sigmoid/xavier opt=AdamW lr=1.00e-01 wd=6.04e-04 | overfit_conf=95%
+  [epoch 01/10] train_loss=6.1428 val_loss=2.0266 train_acc=0.148 val_acc=0.221 (best=0.221)
+  [epoch 02/10] train_loss=2.0182 val_loss=1.8944 train_acc=0.221 val_acc=0.266 (best=0.266)
+  [epoch 03/10] train_loss=1.9341 val_loss=1.8182 train_acc=0.257 val_acc=0.295 (best=0.295)
+  [epoch 04/10] train_loss=1.8707 val_loss=1.7698 train_acc=0.275 val_acc=0.315 (best=0.315)
+  [epoch 05/10] train_loss=1.8147 val_loss=1.7309 train_acc=0.301 val_acc=0.336 (best=0.336)
+  [early] overfit_checking=True → stop (and EXCLUDE this candidate)
+[train] done: best_val_acc=0.3357 (epoch=5) | was_overfit=True
+  [OPT+PSO] evaluator overfit=True → score=-inf
+[train] start: L=7 U=640 D=0.500 act=sigmoid/xavier opt=Adam lr=8.08e-02 wd=1.63e-04 | overfit_conf=95%
+  [epoch 01/10] train_loss=4.4032 val_loss=2.2759 train_acc=0.131 val_acc=0.123 (best=0.123)
+  [epoch 02/10] train_loss=2.2995 val_loss=2.2220 train_acc=0.137 val_acc=0.140 (best=0.140)
+  [epoch 03/10] train_loss=2.3217 val_loss=2.2350 train_acc=0.138 val_acc=0.141 (best=0.141)
+  [epoch 04/10] train_loss=2.3206 val_loss=2.2414 train_acc=0.137 val_acc=0.146 (best=0.146)
+  [early] overfit_checking=True → stop (and EXCLUDE this candidate)
+[train] done: best_val_acc=0.1462 (epoch=4) | was_overfit=True
+  [OPT+PSO] evaluator overfit=True → score=-inf
+[train] start: L=7 U=640 D=0.500 act=sigmoid/xavier opt=AdamW lr=3.80e-02 wd=3.42e-04 | overfit_conf=95%
+  [epoch 01/10] train_loss=2.9376 val_loss=1.9894 train_acc=0.191 val_acc=0.237 (best=0.237)
+  [epoch 02/10] train_loss=2.0419 val_loss=1.9117 train_acc=0.223 val_acc=0.261 (best=0.261)
+  [epoch 03/10] train_loss=1.9658 val_loss=1.8518 train_acc=0.242 val_acc=0.271 (best=0.271)
+  [epoch 04/10] train_loss=1.8557 val_loss=1.7516 train_acc=0.298 val_acc=0.355 (best=0.355)
+  [epoch 05/10] train_loss=1.7757 val_loss=1.6877 train_acc=0.332 val_acc=0.376 (best=0.376)
+  [epoch 06/10] train_loss=1.7086 val_loss=1.6146 train_acc=0.361 val_acc=0.409 (best=0.409)
+  [epoch 07/10] train_loss=1.6540 val_loss=1.5788 train_acc=0.388 val_acc=0.423 (best=0.423)
+  [early] overfit_checking=True → stop (and EXCLUDE this candidate)
+[train] done: best_val_acc=0.4226 (epoch=7) | was_overfit=True
+  [OPT+PSO] evaluator overfit=True → score=-inf
+[train] start: L=7 U=640 D=0.500 act=sigmoid/xavier opt=AdamW lr=2.60e-02 wd=2.73e-04 | overfit_conf=95%
+  [epoch 01/10] train_loss=2.7905 val_loss=1.9442 train_acc=0.205 val_acc=0.292 (best=0.292)
+  [epoch 02/10] train_loss=2.0293 val_loss=1.9712 train_acc=0.253 val_acc=0.245 (best=0.292)
+  [epoch 03/10] train_loss=1.9332 val_loss=1.8056 train_acc=0.282 val_acc=0.329 (best=0.329)
+  [epoch 04/10] train_loss=1.8475 val_loss=1.7268 train_acc=0.310 val_acc=0.356 (best=0.356)
+  [epoch 05/10] train_loss=1.7823 val_loss=1.6744 train_acc=0.337 val_acc=0.376 (best=0.376)
+  [epoch 06/10] train_loss=1.7285 val_loss=1.6259 train_acc=0.359 val_acc=0.401 (best=0.401)
+  [epoch 07/10] train_loss=1.6742 val_loss=1.5925 train_acc=0.379 val_acc=0.420 (best=0.420)
+  [epoch 08/10] train_loss=1.6328 val_loss=1.5752 train_acc=0.398 val_acc=0.428 (best=0.428)
+  [epoch 09/10] train_loss=1.6146 val_loss=1.5606 train_acc=0.403 val_acc=0.433 (best=0.433)
+  [epoch 10/10] train_loss=1.5925 val_loss=1.5484 train_acc=0.408 val_acc=0.439 (best=0.439)
+[train] done: best_val_acc=0.4393 (epoch=10) | was_overfit=False
+  [PSO-OPT] iter 5/6: iter_best=0.4393 | gbest=0.4473 (opt=AdamW, lr=4.23e-02, wd=3.65e-04)
+[train] start: L=7 U=640 D=0.500 act=sigmoid/xavier opt=AdamW lr=5.17e-02 wd=3.79e-04 | overfit_conf=95%
+  [epoch 01/10] train_loss=3.9687 val_loss=1.9978 train_acc=0.160 val_acc=0.253 (best=0.253)
+  [epoch 02/10] train_loss=1.9944 val_loss=1.8644 train_acc=0.257 val_acc=0.298 (best=0.298)
+  [epoch 03/10] train_loss=1.8968 val_loss=1.7692 train_acc=0.295 val_acc=0.344 (best=0.344)
+  [epoch 04/10] train_loss=1.8247 val_loss=1.7277 train_acc=0.325 val_acc=0.360 (best=0.360)
+  [early] overfit_checking=True → stop (and EXCLUDE this candidate)
+[train] done: best_val_acc=0.3605 (epoch=4) | was_overfit=True
+  [OPT+PSO] evaluator overfit=True → score=-inf
+[train] start: L=7 U=640 D=0.500 act=sigmoid/xavier opt=AdamW lr=1.00e-01 wd=4.04e-04 | overfit_conf=95%
+  [epoch 01/10] train_loss=6.8275 val_loss=2.0500 train_acc=0.145 val_acc=0.171 (best=0.171)
+  [epoch 02/10] train_loss=2.0631 val_loss=1.9951 train_acc=0.182 val_acc=0.209 (best=0.209)
+  [epoch 03/10] train_loss=1.9838 val_loss=1.8717 train_acc=0.225 val_acc=0.282 (best=0.282)
+  [epoch 04/10] train_loss=1.9036 val_loss=1.8153 train_acc=0.269 val_acc=0.303 (best=0.303)
+  [epoch 05/10] train_loss=1.8444 val_loss=1.7483 train_acc=0.287 val_acc=0.330 (best=0.330)
+  [epoch 06/10] train_loss=1.7964 val_loss=1.7123 train_acc=0.309 val_acc=0.343 (best=0.343)
+  [epoch 07/10] train_loss=1.7424 val_loss=1.6861 train_acc=0.331 val_acc=0.348 (best=0.348)
+  [epoch 08/10] train_loss=1.7044 val_loss=1.6490 train_acc=0.348 val_acc=0.373 (best=0.373)
+  [epoch 09/10] train_loss=1.6709 val_loss=1.6246 train_acc=0.365 val_acc=0.391 (best=0.391)
+  [epoch 10/10] train_loss=1.6410 val_loss=1.6183 train_acc=0.374 val_acc=0.398 (best=0.398)
+[train] done: best_val_acc=0.3982 (epoch=10) | was_overfit=False
+[train] start: L=7 U=640 D=0.500 act=sigmoid/xavier opt=AdamW lr=3.18e-02 wd=6.27e-05 | overfit_conf=95%
+  [epoch 01/10] train_loss=2.7544 val_loss=1.9508 train_acc=0.190 val_acc=0.262 (best=0.262)
+  [epoch 02/10] train_loss=2.0279 val_loss=1.8296 train_acc=0.255 val_acc=0.322 (best=0.322)
+  [epoch 03/10] train_loss=1.9141 val_loss=1.7718 train_acc=0.289 val_acc=0.351 (best=0.351)
+  [epoch 04/10] train_loss=1.8301 val_loss=1.7152 train_acc=0.318 val_acc=0.370 (best=0.370)
+  [epoch 05/10] train_loss=1.7638 val_loss=1.6665 train_acc=0.348 val_acc=0.388 (best=0.388)
+  [early] overfit_checking=True → stop (and EXCLUDE this candidate)
+[train] done: best_val_acc=0.3879 (epoch=5) | was_overfit=True
+  [OPT+PSO] evaluator overfit=True → score=-inf
+[train] start: L=7 U=640 D=0.500 act=sigmoid/xavier opt=AdamW lr=2.92e-02 wd=2.94e-04 | overfit_conf=95%
+  [epoch 01/10] train_loss=2.8037 val_loss=1.9438 train_acc=0.205 val_acc=0.281 (best=0.281)
+  [epoch 02/10] train_loss=2.0145 val_loss=1.8872 train_acc=0.262 val_acc=0.288 (best=0.288)
+  [epoch 03/10] train_loss=1.9258 val_loss=1.7698 train_acc=0.287 val_acc=0.335 (best=0.335)
+  [epoch 04/10] train_loss=1.8381 val_loss=1.7399 train_acc=0.316 val_acc=0.338 (best=0.338)
+  [epoch 05/10] train_loss=1.7718 val_loss=1.6598 train_acc=0.345 val_acc=0.387 (best=0.387)
+  [epoch 06/10] train_loss=1.7152 val_loss=1.6237 train_acc=0.362 val_acc=0.400 (best=0.400)
+  [epoch 07/10] train_loss=1.6666 val_loss=1.5792 train_acc=0.382 val_acc=0.419 (best=0.419)
+  [epoch 08/10] train_loss=1.6274 val_loss=1.5730 train_acc=0.397 val_acc=0.418 (best=0.419)
+  [early] overfit_checking=True → stop (and EXCLUDE this candidate)
+[train] done: best_val_acc=0.4193 (epoch=7) | was_overfit=True
+  [OPT+PSO] evaluator overfit=True → score=-inf
+[train] start: L=7 U=640 D=0.500 act=sigmoid/xavier opt=AdamW lr=5.13e-02 wd=4.10e-04 | overfit_conf=95%
+  [epoch 01/10] train_loss=3.5325 val_loss=2.0334 train_acc=0.158 val_acc=0.217 (best=0.217)
+  [epoch 02/10] train_loss=2.0574 val_loss=1.9102 train_acc=0.220 val_acc=0.243 (best=0.243)
+  [epoch 03/10] train_loss=1.9790 val_loss=1.9125 train_acc=0.235 val_acc=0.236 (best=0.243)
+  [epoch 04/10] train_loss=1.9193 val_loss=1.7817 train_acc=0.260 val_acc=0.344 (best=0.344)
+  [epoch 05/10] train_loss=1.8202 val_loss=1.6856 train_acc=0.314 val_acc=0.382 (best=0.382)
+  [epoch 06/10] train_loss=1.7348 val_loss=1.6433 train_acc=0.356 val_acc=0.405 (best=0.405)
+  [epoch 07/10] train_loss=1.6749 val_loss=1.5741 train_acc=0.381 val_acc=0.428 (best=0.428)
+  [epoch 08/10] train_loss=1.6224 val_loss=1.5484 train_acc=0.406 val_acc=0.438 (best=0.438)
+  [epoch 09/10] train_loss=1.5866 val_loss=1.5237 train_acc=0.419 val_acc=0.448 (best=0.448)
+  [epoch 10/10] train_loss=1.5693 val_loss=1.5147 train_acc=0.426 val_acc=0.452 (best=0.452)
+[train] done: best_val_acc=0.4516 (epoch=10) | was_overfit=False
+  [PSO-OPT] iter 6/6: iter_best=0.4516 | gbest=0.4516 (opt=AdamW, lr=5.13e-02, wd=4.10e-04)
+[PSO-OPT] done: gbest=0.4516 (opt=AdamW, lr=5.13e-02, wd=4.10e-04) | time=639.33s
+[train] start: L=7 U=640 D=0.500 act=sigmoid/xavier opt=AdamW lr=5.13e-02 wd=4.10e-04 | overfit_conf=95%
+  [epoch 01/10] train_loss=3.7606 val_loss=1.9147 train_acc=0.191 val_acc=0.301 (best=0.301)
+  [epoch 02/10] train_loss=1.9765 val_loss=1.8223 train_acc=0.265 val_acc=0.311 (best=0.311)
+  [epoch 03/10] train_loss=1.8905 val_loss=1.7296 train_acc=0.296 val_acc=0.374 (best=0.374)
+  [epoch 04/10] train_loss=1.8087 val_loss=1.6942 train_acc=0.329 val_acc=0.373 (best=0.374)
+  [early] overfit_checking=True → stop (and EXCLUDE this candidate)
+[train] done: best_val_acc=0.3743 (epoch=3) | was_overfit=True
+[OPT+PSO] final overfit=True → val=-inf
+
+================================================================================
+【STAGE 3】 (Base) PSO(optim+lr+wd) 결과 - 선택 조합
+================================================================================
+【SELECTED HYPERPARAMETERS】
+               act : sigmoid
+           dropout : 0.5
+            layers : 7
+                lr : 0.05132061745718294
+             optim : AdamW
+             units : 640
+            w_init : xavier
+      weight_decay : 0.00040988247485061177
+================================================================================
+[SNAPSHOT] Base-3 after PSO: {'layers': 7, 'units': 640, 'dropout': 0.5, 'act': 'sigmoid', 'w_init': 'xavier', 'optim': 'AdamW', 'lr': 0.05132061745718294, 'weight_decay': 0.00040988247485061177}
+[Stage] Base-3 result: overfit → excluded
+================================================================================
+[FINAL-SELECT] all candidates excluded by overfitting → pick first base as fallback
+
+================================================================================
+【STAGE 4】 세 베이스 중 최종 선택(VAL 최고)
+================================================================================
+【SELECTED HYPERPARAMETERS】
+               act : relu
+           dropout : 0.225
+            layers : 5
+                lr : 0.001
+             optim : Adam
+             units : 448
+            w_init : he
+      weight_decay : 0.0001
+================================================================================
+[train] start: L=5 U=448 D=0.225 act=relu/he opt=Adam lr=1.00e-03 wd=1.00e-04 | overfit_conf=95%
+  [epoch 01/10] train_loss=1.9720 val_loss=1.6352 train_acc=0.304 val_acc=0.413 (best=0.413)
+  [epoch 02/10] train_loss=1.6717 val_loss=1.5218 train_acc=0.401 val_acc=0.458 (best=0.458)
+  [epoch 03/10] train_loss=1.5531 val_loss=1.4619 train_acc=0.440 val_acc=0.477 (best=0.477)
+  [epoch 04/10] train_loss=1.4721 val_loss=1.4209 train_acc=0.473 val_acc=0.491 (best=0.491)
+  [epoch 05/10] train_loss=1.4127 val_loss=1.3874 train_acc=0.496 val_acc=0.504 (best=0.504)
+  [epoch 06/10] train_loss=1.3511 val_loss=1.3509 train_acc=0.519 val_acc=0.516 (best=0.516)
+  [epoch 07/10] train_loss=1.2980 val_loss=1.3364 train_acc=0.539 val_acc=0.525 (best=0.525)
+  [early] overfit_checking=True → stop (and EXCLUDE this candidate)
+[train] done: best_val_acc=0.5248 (epoch=7) | was_overfit=True
+
+[HISTORY] Final model epoch-wise metrics:
+  ep=01 | tr_loss=1.9720 va_loss=1.6352 tr_acc=0.3041 va_acc=0.4127
+  ep=02 | tr_loss=1.6717 va_loss=1.5218 tr_acc=0.4005 va_acc=0.4584
+  ep=03 | tr_loss=1.5531 va_loss=1.4619 tr_acc=0.4405 va_acc=0.4766
+  ep=04 | tr_loss=1.4721 va_loss=1.4209 tr_acc=0.4731 va_acc=0.4914
+  ep=05 | tr_loss=1.4127 va_loss=1.3874 tr_acc=0.4961 va_acc=0.5044
+  ep=06 | tr_loss=1.3511 va_loss=1.3509 tr_acc=0.5185 va_acc=0.5160
+  ep=07 | tr_loss=1.2980 va_loss=1.3364 tr_acc=0.5393 va_acc=0.5248
+
+[TIMINGS] sih=602.07s, AI(b1/b2/b3)=[96.55, 83.62, 90.38]s, PSO(b1/b2/b3)=[96.72, 667.04, 639.33]s, final_train=22.46s, total=2356.18s
+
+[RESULT] Final(val@10)=0.5248 | Test Acc=0.5339 (loss=1.3197) | round_time=39.3 min
+
+========================================================================
+【STAGE 5】 최종 학습 & 테스트 성능
+========================================================================
+〈Test Result〉
+          test_acc : 0.5339
+         test_loss : 1.3197
+
+================================================================================
+【FINAL SELECTED HYPERPARAMETERS】
+================================================================================
+【SELECTED HYPERPARAMETERS】
+               act : relu
+           dropout : 0.225
+            layers : 5
+                lr : 0.001
+             optim : Adam
+             units : 448
+            w_init : he
+      weight_decay : 0.0001
+================================================================================
+
+[TIMINGS SUMMARY]
+data_load        : 0.96s
+sih              : 602.07s
+ai_base1         : 96.55s
+ai_base2         : 83.62s
+ai_base3         : 90.38s
+pso_base1        : 96.72s
+pso_base2        : 667.04s
+pso_base3        : 639.33s
+final_train      : 22.46s
+round_total      : 2356.18s
