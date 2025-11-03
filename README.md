@@ -1,4 +1,7 @@
-# CIFAR-10 다중 클래스 분류를 위한 MLP 모델의 하이퍼파라미터 최적화 알고리즘
+<h1 align="center" style="margin: 0; padding: 0;">
+  CIFAR-10 다중 클래스 분류를 위한 MLP 모델의<br/>
+  하이퍼파라미터 최적화 알고리즘
+</h1>
 
 ## 실행
 ```
