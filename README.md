@@ -1,5 +1,9 @@
 # CIFAR-10 다중 클래스 분류를 위한 MLP 모델의 하이퍼파라미터 최적화 알고리즘
 
+# 실행
+```
+python auto.py
+```
 
 # 파이프라인
 <p align="center"> <img src="pipeline.png" alt="pipeline" width="85%"> </p>
